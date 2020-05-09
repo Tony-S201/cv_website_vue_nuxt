@@ -1,8 +1,8 @@
 <template>
   <div>
-    <p>Hi from {{ name }}</p>
+    <p>About page</p>
     <NLink to="/">
-      Home page
+      Retour
     </NLink>
   </div>
 </template>
@@ -12,6 +12,9 @@ export default {
   layout: 'inside',
   head: {
     title: 'About page'
+  },
+  mounted () {
+    this.$nuxt.$loading.finish()
   }
 }
 </script>
