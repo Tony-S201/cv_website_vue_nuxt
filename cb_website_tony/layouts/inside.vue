@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Je suis le layout dedans</h1>
+        <h1>Layout de toutes les autres catégories</h1>
         <Nuxt/>
   </div>
 </template>

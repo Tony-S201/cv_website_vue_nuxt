@@ -1,11 +1,9 @@
 <template>
   <div>
     <h1>Bienvenue</h1>
-    <b-button @click="goToAbout">
-      <!-- <NLink to="/about">
+    <button @click="goToAbout">
         Voir le portfolio
-      </NLink> -->
-    </b-button>
+    </button>
   </div>
 </template>
 
@@ -13,7 +11,7 @@
 export default {
   layout: 'first',
   head: {
-    title: 'Home page'
+    title: 'Accueil'
   },
   methods: {
     goToAbout () {
@@ -21,7 +19,7 @@ export default {
 
       setTimeout(() => {
         this.$router.push('/about')
-      }, 5000)
+      }, 2000)
     }
   }
 }

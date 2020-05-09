@@ -11,10 +11,10 @@
 export default {
   layout: 'inside',
   head: {
-    title: 'About page'
+    title: 'A propos'
   },
   mounted () {
-    this.$nuxt.$loading.finish()
+    // this.$nuxt.$loading.finish()
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>JE SUIS LE LAYOUT DU DEBUT</h1>
+        <h1>Layout de l'accueil</h1>
         <Nuxt/>
     </div>
 </template>
