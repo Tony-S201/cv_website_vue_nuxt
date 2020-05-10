@@ -19,7 +19,7 @@ export default {
 
       setTimeout(() => {
         this.$router.push('/about')
-      }, 2000)
+      }, 3000)
     }
   }
 }
