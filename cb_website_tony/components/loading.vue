@@ -35,6 +35,7 @@ export default {
   padding-top: 200px;
   font-size: 30px;
   font-family: sans-serif;
+  z-index: 10;
 }
 @keyframes ldio-jb3kv2euomp-1 {
     0% { transform: rotate(0deg) }
