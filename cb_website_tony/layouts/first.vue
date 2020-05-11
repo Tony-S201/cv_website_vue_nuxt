@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <div id="select-language-row">
+    <div id="first-layout-container">
+        <div id="first-select-language-row">
           <b-dropdown v-model="selectLanguage" aria-role="list">
             <button class="button" type="button" slot="trigger">
                 <template v-if="selectLanguage == 'FR'">
-                    <img class="select-language-bubble" width='30px' height='30px' src="~/assets/img/icons8-sms-50.png"/>
+                    <img class="first-select-language-bubble" width='30px' height='30px' src="~/assets/img/icons8-language-skill-50.png"/>
                     <span>FR</span>
                 </template>
                 <template v-if="selectLanguage == 'EN'">
-                    <img class="select-language-bubble" width='30px' height='30px' src="~/assets/img/icons8-sms-50.png"/>
+                    <img class="first-select-language-bubble" width='30px' height='30px' src="~/assets/img/icons8-language-skill-50.png"/>
                     <span>EN</span>
                 </template>
                 <b-icon icon="menu-down"></b-icon>
@@ -16,7 +16,7 @@
 
             <b-dropdown-item :value="'FR'" aria-role="listitem">
                 <div class="media">
-                    <b-icon class="media-left" icon="earth"></b-icon>
+                    <img width='30px' height='30px' src="~/assets/img/icons8-france-48.png"/>
                     <div class="media-content">
                         <h3>Français</h3>
                     </div>
@@ -25,7 +25,8 @@
 
             <b-dropdown-item :value="'EN'" aria-role="listitem">
                 <div class="media">
-                    <b-icon class="media-left" icon="account-multiple"></b-icon>
+                    <img width='30px' height='30px' src="~/assets/img/icons8-great-britain-48.png"/>
+                    <img width='30px' height='30px' src="~/assets/img/icons8-usa-48.png"/>
                     <div class="media-content">
                         <h3>English</h3>
                     </div>

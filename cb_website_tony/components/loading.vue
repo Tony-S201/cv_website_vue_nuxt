@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="loading-page" v-if="loading">
+  <div id="loading-page" v-if="loading">
     <div class="loadingio-spinner-bean-eater-7x4ie975iwv"><div class="ldio-jb3kv2euomp">
     <div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
     </div></div>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-.loading-page {
+#loading-page {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@ export default {
   background: #000;
   text-align: center;
   padding-top: 200px;
-  font-size: 30px;
+  font-size: 1em;
   font-family: sans-serif;
   z-index: 10;
 }
@@ -118,7 +118,7 @@ export default {
     max-width: 8em;
     white-space: nowrap;
     color: #fff;
-    animation: loading 3s linear;
+    animation: loading 1s linear;
 }
 @keyframes loading {
     0% {

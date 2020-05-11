@@ -1,9 +1,12 @@
 <template>
   <div>
-    <h1>Bienvenue</h1>
-    <button @click="goToAbout">
-        Voir le portfolio
-    </button>
+    <div id="home-title-container">
+      <h1>Swierz Tony</h1>
+      <h2>Développeur Web</h2>
+    </div>
+    <div id="home-goto-container">
+      <b-button @click="goToAbout">Voir le portfolio</b-button>
+    </div>
   </div>
 </template>
 
