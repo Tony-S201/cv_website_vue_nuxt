@@ -1,5 +1,5 @@
 <template>
-  <div id="about-container">
+  <div class="about-container">
     <p>About page</p>
     <NLink to="/">
       Retour

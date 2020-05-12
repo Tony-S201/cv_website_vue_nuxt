@@ -1,34 +1,34 @@
 <template>
-  <div id="inside-layout-container">
-      <nav id="inside-nav">
+  <div class="inside-layout-container">
+      <nav class="inside-nav">
 
-        <aside id="inside-aside-menu">
-          <div id="inside-aside-logo-container">
-            <img id="inside-aside-logo" src="~/assets/img/frenchflag.jpg" />
+        <aside class="inside-aside-menu">
+          <div class="inside-aside-logo-container">
+            <img class="inside-aside-logo" src="~/assets/img/frenchflag.jpg" />
           </div>
-          <div id="inside-aside-menu-container">
-            <ul id="inside-aside-menu-list">
+          <div class="inside-aside-menu-container">
+            <ul class="inside-aside-menu-list">
               <a class="inside-aside-menu-list-items" @click="goTo('about')"><li>A propos</li></a>
               <a class="inside-aside-menu-list-items" @click="goTo('skills')"><li>Technologies</li></a>
               <a class="inside-aside-menu-list-items" @click="goTo('projects')"><li>Projets</li></a>
               <a class="inside-aside-menu-list-items" @click="goTo('contact')"><li>Contact</li></a>
             </ul>
           </div>
-          <div id="inside-aside-mentions-container">
+          <div class="inside-aside-mentions-container">
             <a href="#">Mentions Légales</a>
             <p>Copyright Swierz Tony 2020</p>
           </div>
         </aside>
 
-        <div id="inside-menu">
+        <div class="inside-menu">
         </div>
 
-        <div id="inside-menu-burger">
+        <div class="inside-menu-burger">
           <input type="checkbox" v-model="checked"/>    
           <span></span>
           <span></span>
           <span></span>
-          <ul id="inside-menu-burger-list">
+          <ul class="inside-menu-burger-list">
             <a @click="goTo('about')"><li>A propos</li></a>
             <a @click="goTo('skills')"><li>Technologies</li></a>
             <a @click="goTo('projects')"><li>Projets</li></a>
@@ -36,7 +36,7 @@
           </ul>
         </div>
 
-        <div id="inside-select-language">
+        <div class="inside-select-language">
           <b-dropdown v-model="selectLanguage" position="is-bottom-left" aria-role="list">
             <button class="button" type="button" slot="trigger">
                 <template v-if="selectLanguage == 'FR'">
@@ -71,12 +71,12 @@
           </b-dropdown>
         </div>
 
-        <div id="inside-tablet-block">
+        <div class="inside-tablet-block">
         </div>
 
       </nav>
 
-      <div id="inside-networks">
+      <div class="inside-networks">
         <a href="https://github.com/Tony-S201" target="_blank"><img src="~/assets/img/icons8-github-48.png"/></a>
         <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img src="~/assets/img/icons8-linkedin-48.png"/></a>
         <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img src="~/assets/img/icons8-stack-overflow-48.png"/></a>

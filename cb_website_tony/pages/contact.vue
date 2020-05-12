@@ -1,5 +1,5 @@
 <template>
-  <div id="contact-container">
+  <div class="contact-container">
     <p>Contact page</p>
     <NLink to="/">
       Retour

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div id="home-title-container">
+    <div class="home-title-container">
       <h1>Swierz Tony</h1>
       <h2>Développeur Web</h2>
     </div>
-    <div id="home-goto-container">
+    <div class="home-goto-container">
       <b-button @click="goToAbout">Voir le portfolio</b-button>
     </div>
   </div>

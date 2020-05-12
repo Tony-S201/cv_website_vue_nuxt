@@ -1,5 +1,5 @@
 <template>
-  <div id="skills-container">
+  <div class="skills-container">
     <p>Technologies page</p>
     <NLink to="/">
       Retour
