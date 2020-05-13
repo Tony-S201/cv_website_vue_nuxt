@@ -1,10 +1,10 @@
 <template>
-  <div class="contact-container">
-    <p>Contact page</p>
+  <section class="contact-container">
+    <h1>Contact page</h1>
     <NLink to="/">
       Retour
     </NLink>
-  </div>
+  </section>
 </template>
 
 <script>

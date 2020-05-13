@@ -1,10 +1,10 @@
 <template>
-  <div class="about-container">
-    <p>About page</p>
+  <section class="about-container">
+    <h1>About page</h1>
     <NLink to="/">
       Retour
     </NLink>
-  </div>
+  </section>
 </template>
 
 <script>
