@@ -1,9 +1,6 @@
 <template>
   <section class="about-container">
-    <h1>About page</h1>
-    <NLink to="/">
-      Retour
-    </NLink>
+    <h1 class="section-titles">About page</h1>
   </section>
 </template>
 

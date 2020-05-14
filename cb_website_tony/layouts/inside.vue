@@ -9,7 +9,7 @@
           <div class="inside-aside-menu-container">
             <ul class="inside-aside-menu-list">
               <a class="inside-aside-menu-list-items" @click="goTo('about')"><li>A propos</li></a>
-              <a class="inside-aside-menu-list-items" @click="goTo('skills')"><li>Technologies</li></a>
+              <a class="inside-aside-menu-list-items" @click="goTo('skills')"><li>Compétences</li></a>
               <a class="inside-aside-menu-list-items" @click="goTo('projects')"><li>Projets</li></a>
               <a class="inside-aside-menu-list-items" @click="goTo('contact')"><li>Contact</li></a>
             </ul>
@@ -30,7 +30,7 @@
           <span></span>
           <ul class="inside-menu-burger-list">
             <a @click="goTo('about')"><li>A propos</li></a>
-            <a @click="goTo('skills')"><li>Technologies</li></a>
+            <a @click="goTo('skills')"><li>Compétences</li></a>
             <a @click="goTo('projects')"><li>Projets</li></a>
             <a @click="goTo('contact')"><li>Contact</li></a>
           </ul>

@@ -1,9 +1,6 @@
 <template>
   <section class="contact-container">
-    <h1>Contact page</h1>
-    <NLink to="/">
-      Retour
-    </NLink>
+    <h1 class="section-titles">Contact page</h1>
   </section>
 </template>
 

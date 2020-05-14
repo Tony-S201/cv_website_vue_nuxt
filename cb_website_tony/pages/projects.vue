@@ -1,9 +1,6 @@
 <template>
   <section class="projects-container">
-    <h1>Projects page</h1>
-    <NLink to="/">
-      Retour
-    </NLink>
+    <h1 class="section-titles">Projects page</h1>
 
     <div class="tabs is-centered">
       <ul>
