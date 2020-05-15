@@ -35,23 +35,21 @@
 
     <!-- TO DO : v-for liste de tous les projets, avec v-if sur catégorie choisie -->
     <div class="cards-container">
-      <article class="project-card" :v-for="en">
+      <article class="project-card" v-for="item in en.projects" :key="item.id">
         <div class="project-card-container">
           <div class="project-card-image-container">
             <figure class="project-card-image">
-              <img src="~/assets/img/fat-1.jpg" alt="Placeholder image">
+              <img :src="require(`../assets/img/${item.image}`)" alt="Placeholder image">
             </figure>
           </div>
           <div class="project-card-content-container">
             <div class="project-card-informations">
-              <p class="project-card-title">The FAT Bastard Gangbang</p>
-              <p class="project-card-function">Développeur Front-End</p>
+              <p class="project-card-title">{{ item.title }}</p>
+              <p class="project-card-function">{{ item.details.function }}</p>
             </div>
             <div class="project-card-content">
               <b-taglist>
-                  <b-tag type="is-info">React</b-tag>
-                  <b-tag type="is-info">WordPress</b-tag>
-                  <b-tag type="is-info">SASS</b-tag>
+                  <b-tag v-for="tag in item.technologies" type="is-info" :key="tag.id">{{ tag.name }}</b-tag>
               </b-taglist>
               <time class="project-card-date" datetime="2016-1-1">Avril 2019</time>
             </div>

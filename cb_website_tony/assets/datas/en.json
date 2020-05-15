@@ -1,6 +1,7 @@
 {"projects": {
     "1": {
         "title": "The FAT Bastard GangBang",
+        "image": "fat-1.jpg",
         "details": {
             "function": "Front-End Developer",
             "description": "",
@@ -9,9 +10,27 @@
             "overview": "Unavailable"
         },
         "technologies": [
-            "React",
-            "WordPress",
-            "Sass"
+            { "name" : "React" },
+            { "name" : "WordPress" },
+            { "name" : "Sass" }
+        ]
+    },
+    "2": {
+        "title": "Site Portfolio",
+        "image": "fat-2.jpg",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "Personal portfolio website",
+            "team": "Me",
+            "date": "August 2019",
+            "overview": "https://www.tonyswierz.com/"
+        },
+        "technologies": [
+            { "name" : "HTML" },
+            { "name" : "CSS" },
+            { "name" : "JS" },
+            { "name" : "PHP" },
+            { "name" : "XML" }
         ]
     }
 },
