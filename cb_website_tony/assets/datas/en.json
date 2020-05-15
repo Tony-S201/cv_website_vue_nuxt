@@ -1,10 +1,11 @@
 {"projects": {
     "1": {
         "title": "The FAT Bastard GangBang",
+        "type": "Web",
         "image": "fat-1.jpg",
         "details": {
             "function": "Front-End Developer",
-            "description": "",
+            "description": "Website created for a music band",
             "team": "2 React Developers / 2 WordPress Developers",
             "date": "April 2019",
             "overview": "Unavailable"
@@ -16,8 +17,9 @@
         ]
     },
     "2": {
-        "title": "Site Portfolio",
-        "image": "fat-2.jpg",
+        "title": "Portfolio Website v1",
+        "type": "Web",
+        "image": "cv-1.jpg",
         "details": {
             "function": "Full-Stack Developer",
             "description": "Personal portfolio website",
@@ -31,6 +33,38 @@
             { "name" : "JS" },
             { "name" : "PHP" },
             { "name" : "XML" }
+        ]
+    },
+    "3": {
+        "title": "Markdown Editor",
+        "type": "Web",
+        "image": "markdown_editor.jpg",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "Application which convert text in Markdown, using controlled fields",
+            "team": "Me",
+            "date": "August 2019",
+            "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/"
+        },
+        "technologies": [
+            { "name" : "React" },
+            { "name" : "Sass" }
+        ]
+    },
+    "4": {
+        "title": "Font Tester",
+        "type": "Web",
+        "image": "font_tester.jpg",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "Try and discovers new fonts, use the color picker and more !",
+            "team": "Me",
+            "date": "September 2019",
+            "overview": "https://tony-s201.github.io/Font_Tester_Prod/"
+        },
+        "technologies": [
+            { "name" : "React" },
+            { "name" : "Css" }
         ]
     }
 },

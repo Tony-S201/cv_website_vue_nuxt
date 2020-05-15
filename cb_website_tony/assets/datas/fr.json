@@ -1,9 +1,11 @@
 {"projects": {
     "1": {
-        "title": "Coucou",
+        "title": "The FAT Bastard GangBang",
+        "type": "Web",
+        "image": "fat-1.jpg",
         "details": {
             "function": "Développeur Front-End",
-            "description": "Site réalisé pour un groupe de musique",
+            "description": "Site vitrine avec un back-office réalisé pour un groupe de musique",
             "team": "2 Développeurs React / 2 Développeurs WordPress",
             "date": "Avril 2019",
             "overview": "Indisponible"
@@ -15,18 +17,54 @@
         ]
     },
     "2": {
-        "title": "The FAT Bastard GangBang",
+        "title": "Site Portfolio v1",
+        "type": "Web",
+        "image": "cv-1.jpg",
         "details": {
-            "function": "Front-End Developer",
+            "function": "Développeur Full-Stack",
             "description": "",
-            "team": "2 React Developers / 2 WordPress Developers",
-            "date": "April 2019",
-            "overview": "Unavailable"
+            "team": "Me",
+            "date": "Août 2019",
+            "overview": "https://www.tonyswierz.com/"
+        },
+        "technologies": [
+            { "name" : "HTML" },
+            { "name" : "CSS" },
+            { "name" : "JS" },
+            { "name" : "PHP" },
+            { "name" : "XML" }
+        ]
+    },
+    "3": {
+        "title": "Markdown Editor",
+        "type": "Web",
+        "image": "markdown_editor.jpg",
+        "details": {
+            "function": "Développeur Full-Stack",
+            "description": "Application qui converti le texte en Markdown, utilisation des champs contrôllés",
+            "team": "Me",
+            "date": "Septembre 2019",
+            "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/"
         },
         "technologies": [
             { "name" : "React" },
-            { "name" : "WordPress" },
             { "name" : "Sass" }
+        ]
+    },
+    "4": {
+        "title": "Font Tester",
+        "type": "Web",
+        "image": "font_tester.jpg",
+        "details": {
+            "function": "Développeur Full-Stack",
+            "description": "Application responsive proposant de découvrir et d'essayer diverses polices d'écritures, avec des fonctionnalités tel que le changement de couleur ou de taille",
+            "team": "Me",
+            "date": "Septembre 2019",
+            "overview": "https://tony-s201.github.io/Font_Tester_Prod/"
+        },
+        "technologies": [
+            { "name" : "React" },
+            { "name" : "Css" }
         ]
     }
 },

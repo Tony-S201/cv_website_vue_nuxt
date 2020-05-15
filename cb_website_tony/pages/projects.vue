@@ -51,7 +51,7 @@
               <b-taglist>
                   <b-tag v-for="tag in item.technologies" type="is-info" :key="tag.id">{{ tag.name }}</b-tag>
               </b-taglist>
-              <time class="project-card-date" datetime="2016-1-1">Avril 2019</time>
+              <time class="project-card-date" datetime="2016-1-1">{{ item.details.date }}</time>
             </div>
           </div>
         </div>
