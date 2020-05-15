@@ -1,0 +1,20 @@
+{"projects": {
+    "1": {
+        "title": "The FAT Bastard GangBang",
+        "details": {
+            "function": "Développeur Front-End",
+            "description": "Site réalisé pour un groupe de musique",
+            "team": "2 Développeurs React / 2 Développeurs WordPress",
+            "date": "Avril 2019",
+            "overview": "Indisponible"
+        },
+        "technologies": [
+            "React",
+            "WordPress",
+            "Sass"
+        ]
+    }
+},
+"others": {
+
+}}   

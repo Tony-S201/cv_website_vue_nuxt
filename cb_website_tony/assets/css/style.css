@@ -20,10 +20,9 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    height: 12vh;
+    height: 10vh;
     width: 100%;
     z-index: 2;
-    background-color: #fff;
 }
 
 /* ------------------------------- */
@@ -91,10 +90,10 @@
 }
 .inside-menu-burger-list {
   position: absolute;
-  width: 300px;
+  width: 100vw;
+  height: 110vh;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  padding-top: 100px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -102,9 +101,16 @@
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+.inside-menu-burger-list-container {
+    padding: 0 4em 4em 4em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
 .inside-menu-burger-list li {
-  padding: 10px 0;
-  font-size: 22px;
+  font-size: 2em;
+  text-align: center;
 }
 .inside-menu-burger input:checked ~ ul {
   transform: none;
@@ -133,7 +139,11 @@
 .skills-container, 
 .projects-container, 
 .contact-container {
-    padding-top: 10vh;
+    padding-top: 7vh;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 3em;
 }
 
 .home-title-container {
@@ -164,10 +174,10 @@
 
 .inside-aside-menu {
     display: none;
+    background-image: url('../img/home_background_forest.jpg');
 }
 
 main {
-    padding: 3rem;
     height: 100%;
 }
 
@@ -180,8 +190,7 @@ main {
 
 .project-card-container {
     padding: 1vh;
-    border: solid 1px #000;
-    border-radius: 10px;
+    box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
     cursor: pointer;
 }
 
@@ -252,6 +261,14 @@ main {
     font-size: 0.7em;
 }
 
+.section-titles {
+    margin-bottom: 4vh;
+}
+
+.projects-tabs {
+    display: none;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
     .inside-tablet-block {
@@ -271,11 +288,26 @@ main {
     .skills-tools-items {
         width: calc(100%/4);
     }
+    .about-container, 
+    .skills-container, 
+    .projects-container, 
+    .contact-container {
+        padding-top: 10vh;
+    }
+    .projects-tabs {
+        display: block;
+    }
+    .projects-select {
+        display: none;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     .inside-menu {
         display: block;
+    }
+    .inside-nav {
+        height: 7vh;
     }
     .inside-menu-burger,
     .inside-tablet-block {

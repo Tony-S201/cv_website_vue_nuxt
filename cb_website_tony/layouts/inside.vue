@@ -29,10 +29,12 @@
           <span></span>
           <span></span>
           <ul class="inside-menu-burger-list">
-            <a @click="goTo('about')"><li>A propos</li></a>
-            <a @click="goTo('skills')"><li>Compétences</li></a>
-            <a @click="goTo('projects')"><li>Projets</li></a>
-            <a @click="goTo('contact')"><li>Contact</li></a>
+            <div class="inside-menu-burger-list-container">
+              <a @click="goTo('about')"><li>A propos</li></a>
+              <a @click="goTo('skills')"><li>Compétences</li></a>
+              <a @click="goTo('projects')"><li>Projets</li></a>
+              <a @click="goTo('contact')"><li>Contact</li></a>
+            </div>
           </ul>
         </div>
 
