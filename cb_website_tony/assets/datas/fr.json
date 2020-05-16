@@ -28,8 +28,6 @@
             "overview": "https://www.tonyswierz.com/"
         },
         "technologies": [
-            { "name" : "HTML" },
-            { "name" : "CSS" },
             { "name" : "JS" },
             { "name" : "PHP" },
             { "name" : "XML" }

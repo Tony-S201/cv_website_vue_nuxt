@@ -8,10 +8,10 @@
           </div>
           <div class="inside-aside-menu-container">
             <ul class="inside-aside-menu-list">
-              <a class="inside-aside-menu-list-items" @click="goTo('about')"><li>A propos</li></a>
-              <a class="inside-aside-menu-list-items" @click="goTo('skills')"><li>Compétences</li></a>
-              <a class="inside-aside-menu-list-items" @click="goTo('projects')"><li>Projets</li></a>
-              <a class="inside-aside-menu-list-items" @click="goTo('contact')"><li>Contact</li></a>
+              <nuxt-link to="/about" class="inside-aside-menu-list-items"><li>About</li></nuxt-link>
+              <nuxt-link to="/skills" class="inside-aside-menu-list-items"><li>Skills</li></nuxt-link>
+              <nuxt-link to="/projects" class="inside-aside-menu-list-items"><li>Projects</li></nuxt-link>
+              <nuxt-link to="/contact" class="inside-aside-menu-list-items"><li>Contact</li></nuxt-link>
             </ul>
           </div>
           <div class="inside-aside-mentions-container">
@@ -100,6 +100,7 @@ export default {
     }
   },
   methods: {
+    // Function to test custom loading
     goTo(location) {
       this.checked = false
       this.$nuxt.$loading.start()
