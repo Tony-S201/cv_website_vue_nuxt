@@ -1,7 +1,7 @@
 {"projects": {
     "1": {
         "title": "The FAT Bastard GangBang",
-        "type": "Web",
+        "type": "web",
         "image": "fat-1.jpg",
         "details": {
             "function": "Front-End Developer",
@@ -18,7 +18,7 @@
     },
     "2": {
         "title": "Portfolio Website v1",
-        "type": "Web",
+        "type": "web",
         "image": "cv-1.jpg",
         "details": {
             "function": "Full-Stack Developer",
@@ -28,8 +28,6 @@
             "overview": "https://www.tonyswierz.com/"
         },
         "technologies": [
-            { "name" : "HTML" },
-            { "name" : "CSS" },
             { "name" : "JS" },
             { "name" : "PHP" },
             { "name" : "XML" }
@@ -37,7 +35,7 @@
     },
     "3": {
         "title": "Markdown Editor",
-        "type": "Web",
+        "type": "web",
         "image": "markdown_editor.jpg",
         "details": {
             "function": "Full-Stack Developer",
@@ -53,7 +51,7 @@
     },
     "4": {
         "title": "Font Tester",
-        "type": "Web",
+        "type": "web",
         "image": "font_tester.jpg",
         "details": {
             "function": "Full-Stack Developer",
@@ -63,8 +61,7 @@
             "overview": "https://tony-s201.github.io/Font_Tester_Prod/"
         },
         "technologies": [
-            { "name" : "React" },
-            { "name" : "Css" }
+            { "name" : "React" }
         ]
     }
 },

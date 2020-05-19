@@ -1,7 +1,7 @@
 {"projects": {
     "1": {
         "title": "The FAT Bastard GangBang",
-        "type": "Web",
+        "type": "web",
         "image": "fat-1.jpg",
         "details": {
             "function": "Développeur Front-End",
@@ -18,7 +18,7 @@
     },
     "2": {
         "title": "Site Portfolio v1",
-        "type": "Web",
+        "type": "web",
         "image": "cv-1.jpg",
         "details": {
             "function": "Développeur Full-Stack",
@@ -35,7 +35,7 @@
     },
     "3": {
         "title": "Markdown Editor",
-        "type": "Web",
+        "type": "web",
         "image": "markdown_editor.jpg",
         "details": {
             "function": "Développeur Full-Stack",
@@ -51,7 +51,7 @@
     },
     "4": {
         "title": "Font Tester",
-        "type": "Web",
+        "type": "web",
         "image": "font_tester.jpg",
         "details": {
             "function": "Développeur Full-Stack",

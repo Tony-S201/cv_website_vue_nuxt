@@ -30,10 +30,10 @@
           <span></span>
           <ul class="inside-menu-burger-list">
             <div class="inside-menu-burger-list-container">
-              <a @click="goTo('about')"><li>A propos</li></a>
-              <a @click="goTo('skills')"><li>Compétences</li></a>
-              <a @click="goTo('projects')"><li>Projets</li></a>
-              <a @click="goTo('contact')"><li>Contact</li></a>
+              <nuxt-link to="/about" class="inside-aside-menu-list-items"><li>About</li></nuxt-link>
+              <nuxt-link to="/skills" class="inside-aside-menu-list-items"><li>Skills</li></nuxt-link>
+              <nuxt-link to="/projects" class="inside-aside-menu-list-items"><li>Projects</li></nuxt-link>
+              <nuxt-link to="/contact" class="inside-aside-menu-list-items"><li>Contact</li></nuxt-link>
             </div>
           </ul>
         </div>
