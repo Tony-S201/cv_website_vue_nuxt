@@ -223,6 +223,32 @@ main {
     height: 60%;
 }
 
+.project-card-section-informations {
+    margin: 0.6em 0;
+}
+
+.project-card-content-date {
+    display: block;
+    margin-top: 0.6em;
+}
+
+.projects-tabs {
+    display: none;
+}
+
+.projects-modal-taglist {
+    margin-left: 1em;
+}
+
+.projects-modal-team {
+    margin-left: 0.6em;
+}
+
+.projects-modal-row-datelink {
+    display: flex;
+    justify-content: space-between;
+}
+
 .tags {
     margin-bottom: 0.5rem !important;
 }
@@ -269,10 +295,6 @@ main {
 
 .section-titles {
     margin-bottom: 4vh;
-}
-
-.projects-tabs {
-    display: none;
 }
 
 /* Medium devices (tablets, 768px and up) */

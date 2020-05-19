@@ -38,29 +38,31 @@
 
       <article class="project-card" v-for="item in en.projects" :key="item.id">
 
-        <div class="project-card-container" @click="isCardModalActive = true">
+        <div class="project-card-container" @click="isCardModalActive = true, currentItem = item">
 
           <div class="project-card-section-image">
-            <figure class="project-card-image-figure">
+            <figure class="project-card-image-figure image is-2by1">
               <img class="project-card-image-img" :src="require(`../assets/img/${item.image}`)" alt="Placeholder image">
             </figure>
           </div>
           
           <div class="project-card-section-informations">
-            <p class="project-card-informations-title">{{ item.title }}</p>
-            <p class="project-card-informations-function">{{ item.details.function }}</p>
+            <p class="project-card-informations-title has-text-weight-bold">{{ item.title }}</p>
+            <p class="project-card-informations-function is-italic">{{ item.details.function }}</p>
           </div>
 
           <div class="project-card-content">
             <b-taglist class="project-card-content-technologies">
                 <b-tag v-for="tag in item.technologies" type="is-info" :key="tag.id">{{ tag.name }}</b-tag>
             </b-taglist>
-            <time class="project-card-content-date" datetime="2016-1-1">{{ item.details.date }}</time>
+            <time class="project-card-content-date" datetime="2016-1-1"><small>{{ item.details.date }}</small></time>
           </div>
 
         </div>
 
-        <b-modal :active.sync="isCardModalActive" :width="640" scroll="keep">
+      </article>
+
+        <b-modal v-if="currentItem !== undefined" :active.sync="isCardModalActive" :width="640" scroll="keep">
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-4by3">
@@ -75,23 +77,31 @@
                             </figure>
                         </div>
                         <div class="media-content">
-                            <p class="title is-4">John Smith</p>
-                            <p class="subtitle is-6">@johnsmith</p>
+                            <p class="title is-4">{{ currentItem.title }}</p>
+                            <p class="subtitle is-6 is-italic">{{ currentItem.details.function }}</p>
                         </div>
                     </div>
 
                     <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a>#css</a> <a>#responsive</a>
-                        <br>
-                        <small>11:09 PM - 1 Jan 2016</small>
+                        <p>{{ currentItem.details.description }}</p>
+                        <b-taglist class="project-card-content-technologies">
+                          <span class="has-text-weight-bold">Technologies : </span>
+                          <div class="projects-modal-taglist">
+                            <b-tag v-for="tag in currentItem.technologies" type="is-info" :key="tag.id">{{ tag.name }}</b-tag>
+                          </div>
+                        </b-taglist>
+                        <p>
+                          <span class="has-text-weight-bold">Team : </span>
+                          <span class="projects-modal-team">{{ currentItem.details.team }}</span>
+                        </p>
+                        <div class="projects-modal-row-datelink">
+                          <small>{{ currentItem.details.date }}</small>
+                          <small>Lien</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </b-modal>
-        
-      </article>
 
     </div>
 
@@ -116,7 +126,8 @@ export default {
       isActive: 'tous',
       en: en,
       fr: fr,
-      isCardModalActive: false
+      isCardModalActive: false,
+      currentItem: undefined,
     }
   },
   mounted () {
