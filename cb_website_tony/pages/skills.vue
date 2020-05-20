@@ -4,8 +4,16 @@
 
     <div class="skills-blocks-container">
       <div class="skills-left-technologies">
-        <h2 class="skills-titles has-text-centered">Technologies</h2>
-        <div class="skills-technologies-container">
+        <h2 class="skills-titles has-text-centered has-text-weight-bold"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="600"
+          data-sal-easing="ease-out-bounce">Technologies</h2>
+        <div class="skills-technologies-container has-text-centered" 
+          data-sal="slide-right"
+          data-sal-delay="1000"
+          data-sal-duration="800"
+          data-sal-easing="ease-out-bounce">
           <div class="skills-technologies-items">
             <font-awesome-icon class="icon is-large" :icon="['fab', 'vuejs']" aria-hidden="true"></font-awesome-icon>
             <span class="skills-items-text">VueJS, NuxtJS</span>
@@ -40,11 +48,23 @@
           </div>
         </div>
       </div>
-      <div class="skills-center-line">
+      <div class="skills-center-line"
+          data-sal="flip-up"
+          data-sal-delay="200"
+          data-sal-duration="1000"
+          data-sal-easing="ease-out-bounce">
       </div>
       <div class="skills-right-tools">
-        <h2 class="skills-titles">Outils</h2>
-        <div class="skills-tools-container">
+        <h2 class="skills-titles has-text-centered has-text-weight-bold"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="600"
+          data-sal-easing="ease-out-bounce">Outils</h2>
+        <div class="skills-tools-container has-text-centered" 
+          data-sal="slide-left"
+          data-sal-delay="1000"
+          data-sal-duration="800"
+          data-sal-easing="ease-out-bounce">
           <div class="skills-tools-items">
             <font-awesome-icon class="icon is-large" :icon="['fab', 'git']" aria-hidden="true"></font-awesome-icon>
             <span class="skills-items-text">Git</span>
@@ -88,13 +108,22 @@
 </template>
 
 <script>
+import fr from '../assets/datas/fr.json'
+import en from '../assets/datas/en.json'
+import sal from 'sal.js'
+
 export default {
   layout: 'inside',
   head: {
     title: 'Technologies'
   },
   mounted () {
+    sal();
     // this.$nuxt.$loading.finish()
   }
 }
 </script>
+
+<style>
+@import "~/node_modules/sal.js/dist/sal.css";
+</style>

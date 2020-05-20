@@ -10,7 +10,11 @@
         </b-select>
     </b-field>
 
-    <div class="tabs is-centered projects-tabs">
+    <div class="tabs is-centered projects-tabs" 
+      data-sal="flip-up"
+      data-sal-delay="200"
+      data-sal-duration="1000"
+      data-sal-easing="ease-out-bounce">
       <ul>
         <li @click="isActive = 'tous'" :class="{ 'is-active': isActive == 'tous' }">
           <a>
@@ -34,11 +38,14 @@
     </div>
 
     <!-- TO DO : v-for liste de tous les projets, avec v-if sur catégorie choisie -->
-    <div class="project-cards" data-sal="slide-left"
- data-sal-duration="800"
- data-sal-easing="ease-out-bounce">
+    <div class="project-cards">
 
-      <article class="project-card" v-for="item in en.projects" :key="item.id">
+      <article class="project-card" 
+        v-for="item in langs[activeLanguage].projects" 
+        :key="item.id" 
+        data-sal="slide-left"
+        data-sal-duration="800"
+        data-sal-easing="ease-out-bounce">
 
         <div class="project-card-container" @click="isCardModalActive = true, currentItem = item">
 
@@ -136,8 +143,8 @@ export default {
   data () {
     return {
       isActive: 'tous',
-      en: en,
-      fr: fr,
+      langs: { en: en, fr: fr },
+      activeLanguage: 'en',
       isCardModalActive: false,
       currentItem: undefined,
       progress: true,
