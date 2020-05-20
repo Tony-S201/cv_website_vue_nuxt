@@ -4,7 +4,7 @@
 
         <aside class="inside-aside-menu">
           <div class="inside-aside-logo-container">
-            <img class="inside-aside-logo" src="~/assets/img/frenchflag.jpg" />
+            <img class="inside-aside-logo" src="~/assets/img/website-logo.png" />
           </div>
           <div class="inside-aside-menu-container">
             <ul class="inside-aside-menu-list has-text-centered">

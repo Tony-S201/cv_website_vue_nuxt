@@ -34,7 +34,9 @@
     </div>
 
     <!-- TO DO : v-for liste de tous les projets, avec v-if sur catégorie choisie -->
-    <div class="project-cards">
+    <div class="project-cards" data-sal="slide-left"
+ data-sal-duration="800"
+ data-sal-easing="ease-out-bounce">
 
       <article class="project-card" v-for="item in en.projects" :key="item.id">
 
@@ -66,6 +68,7 @@
             <div class="card">
                 <div class="card-image">
                   <b-carousel
+                    :has-drag="drag"
                     :progress="progress"
                     :progress-type="progressType">
                       <b-carousel-item v-for="(picture, i) in currentItem.carousel" :key="i">
@@ -123,6 +126,7 @@
 <script>
 import fr from '../assets/datas/fr.json'
 import en from '../assets/datas/en.json'
+import sal from 'sal.js'
 
 export default {
   layout: 'inside',
@@ -138,10 +142,18 @@ export default {
       currentItem: undefined,
       progress: true,
       progressType: 'is-info',
+      drag: true,
     }
   },
   mounted () {
     // this.$nuxt.$loading.finish()
+    sal({
+      threshold: 0,
+    });
   }
 }
 </script>
+
+<style>
+@import "~/node_modules/sal.js/dist/sal.css";
+</style>
