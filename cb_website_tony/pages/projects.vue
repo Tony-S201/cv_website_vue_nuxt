@@ -65,9 +65,17 @@
         <b-modal v-if="currentItem !== undefined" :active.sync="isCardModalActive" :width="640" scroll="keep">
             <div class="card">
                 <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="/static/img/placeholder-1280x960.png" alt="Image">
-                    </figure>
+                  <b-carousel
+                    :progress="progress"
+                    :progress-type="progressType">
+                      <b-carousel-item v-for="(picture, i) in currentItem.carousel" :key="i">
+                          <section class="hero is-medium">
+                            <figure class="image is-2by1">
+                              <img :src="require(`../assets/img/${picture.img}`)" alt="Image">
+                            </figure>
+                          </section>
+                      </b-carousel-item>
+                  </b-carousel>
                 </div>
                 <div class="card-content">
                     <div class="media">
@@ -128,6 +136,8 @@ export default {
       fr: fr,
       isCardModalActive: false,
       currentItem: undefined,
+      progress: true,
+      progressType: 'is-info',
     }
   },
   mounted () {

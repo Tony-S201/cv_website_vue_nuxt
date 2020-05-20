@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="home-title-container">
+    <div class="home-title-container has-text-centered">
       <h1>Swierz Tony</h1>
       <h2>Développeur Web</h2>
     </div>
-    <div class="home-goto-container">
+    <div class="home-goto-container has-text-centered">
       <b-button @click="goToAbout">Voir le portfolio</b-button>
     </div>
   </div>

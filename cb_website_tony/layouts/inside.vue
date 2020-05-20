@@ -7,14 +7,14 @@
             <img class="inside-aside-logo" src="~/assets/img/frenchflag.jpg" />
           </div>
           <div class="inside-aside-menu-container">
-            <ul class="inside-aside-menu-list">
+            <ul class="inside-aside-menu-list has-text-centered">
               <nuxt-link to="/about" class="inside-aside-menu-list-items"><li>About</li></nuxt-link>
               <nuxt-link to="/skills" class="inside-aside-menu-list-items"><li>Skills</li></nuxt-link>
               <nuxt-link to="/projects" class="inside-aside-menu-list-items"><li>Projects</li></nuxt-link>
               <nuxt-link to="/contact" class="inside-aside-menu-list-items"><li>Contact</li></nuxt-link>
             </ul>
           </div>
-          <div class="inside-aside-mentions-container">
+          <div class="inside-aside-mentions-container has-text-centered">
             <a href="#">Mentions Légales</a>
             <p>Copyright Swierz Tony 2020</p>
           </div>
@@ -30,10 +30,10 @@
           <span></span>
           <ul class="inside-menu-burger-list">
             <div class="inside-menu-burger-list-container">
-              <nuxt-link to="/about" class="inside-aside-menu-list-items"><li>About</li></nuxt-link>
-              <nuxt-link to="/skills" class="inside-aside-menu-list-items"><li>Skills</li></nuxt-link>
-              <nuxt-link to="/projects" class="inside-aside-menu-list-items"><li>Projects</li></nuxt-link>
-              <nuxt-link to="/contact" class="inside-aside-menu-list-items"><li>Contact</li></nuxt-link>
+              <nuxt-link to="/about" class="inside-aside-menu-list-items has-text-black"><li class="has-text-centered">About</li></nuxt-link>
+              <nuxt-link to="/skills" class="inside-aside-menu-list-items has-text-black"><li class="has-text-centered">Skills</li></nuxt-link>
+              <nuxt-link to="/projects" class="inside-aside-menu-list-items has-text-black"><li class="has-text-centered">Projects</li></nuxt-link>
+              <nuxt-link to="/contact" class="inside-aside-menu-list-items has-text-black"><li class="has-text-centered">Contact</li></nuxt-link>
             </div>
           </ul>
         </div>

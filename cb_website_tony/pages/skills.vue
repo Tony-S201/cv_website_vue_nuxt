@@ -4,7 +4,7 @@
 
     <div class="skills-blocks-container">
       <div class="skills-left-technologies">
-        <h2 class="skills-titles">Technologies</h2>
+        <h2 class="skills-titles has-text-centered">Technologies</h2>
         <div class="skills-technologies-container">
           <div class="skills-technologies-items">
             <font-awesome-icon class="icon is-large" :icon="['fab', 'vuejs']" aria-hidden="true"></font-awesome-icon>

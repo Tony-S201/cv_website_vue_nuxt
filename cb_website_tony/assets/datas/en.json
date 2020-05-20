@@ -10,6 +10,11 @@
             "date": "April 2019",
             "overview": "Unavailable"
         },
+        "carousel": [
+            { "img" : "fat-1.jpg" },
+            { "img" : "fat-2.jpg" },
+            { "img" : "fat-3.jpg" }
+        ],
         "technologies": [
             { "name" : "React" },
             { "name" : "WordPress" },

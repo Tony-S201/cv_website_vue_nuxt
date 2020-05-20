@@ -1,6 +1,6 @@
 <template>
     <div id="first-layout-container">
-        <div id="first-select-language-row">
+        <div id="first-select-language-row has-text-left">
           <b-dropdown v-model="selectLanguage" aria-role="list">
             <button class="button" type="button" slot="trigger">
                 <template v-if="selectLanguage == 'FR'">
