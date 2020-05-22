@@ -1,6 +1,6 @@
 <template>
   <section class="projects-container">
-    <h1 class="section-titles">Projects page</h1>
+    <h1 class="section-titles">Projects</h1>
 
     <b-field class="projects-select">
         <b-select placeholder="Tous">

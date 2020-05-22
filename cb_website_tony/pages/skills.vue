@@ -1,6 +1,6 @@
 <template>
   <section class="skills-container">
-    <h1 class="section-titles">Compétences page</h1>
+    <h1 class="section-titles">Compétences</h1>
 
     <div class="skills-blocks-container">
       <div class="skills-left-technologies">

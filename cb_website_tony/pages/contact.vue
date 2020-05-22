@@ -1,6 +1,6 @@
 <template>
   <section class="contact-container">
-    <h1 class="section-titles">Contact page</h1>
+    <h1 class="section-titles">Contact</h1>
   </section>
 </template>
 
