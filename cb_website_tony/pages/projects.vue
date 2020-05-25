@@ -16,19 +16,19 @@
       data-sal-duration="1000"
       data-sal-easing="ease-out-bounce">
       <ul>
-        <li @click="isActive = 'tous'" :class="{ 'is-active': isActive == 'tous' }">
+        <li @click="changeProjectsType('tous')" :class="{ 'is-active': isActive == 'tous' }">
           <a>
             <span class="icon is-small"><font-awesome-icon :icon="['fas', 'globe']" aria-hidden="true"></font-awesome-icon></span>
             <span>Tous</span>
           </a>
         </li>
-        <li @click="isActive = 'web'" :class="{ 'is-active': isActive == 'web' }">
+        <li @click="changeProjectsType('web')" :class="{ 'is-active': isActive == 'web' }">
           <a>
             <span class="icon is-small"><font-awesome-icon :icon="['fas', 'desktop']" aria-hidden="true"></font-awesome-icon></span>
             <span>Web</span>
           </a>
         </li>
-        <li @click="isActive = 'mobile'" :class="{ 'is-active': isActive == 'mobile' }">
+        <li @click="changeProjectsType('mobile')" :class="{ 'is-active': isActive == 'mobile' }">
           <a>
             <span class="icon is-small"><font-awesome-icon :icon="['fas', 'mobile-alt']" aria-hidden="true"></font-awesome-icon></span>
             <span>Mobile</span>
@@ -37,15 +37,12 @@
       </ul>
     </div>
 
-    <!-- TO DO : v-for liste de tous les projets, avec v-if sur catégorie choisie -->
     <div class="project-cards">
 
       <article class="project-card" 
-        v-for="item in langs[activeLanguage].projects" 
-        :key="item.id" 
-        data-sal="slide-left"
-        data-sal-duration="800"
-        data-sal-easing="ease-out-bounce">
+        v-for="item in projectsDatas" 
+        :key="item.id"
+        >
 
         <div class="project-card-container" @click="isCardModalActive = true, currentItem = item">
 
@@ -123,10 +120,6 @@
 
     </div>
 
-    <!-- Bulma Card -->
-
-    
-
   </section>
 </template>
 
@@ -147,16 +140,41 @@ export default {
       activeLanguage: 'en',
       isCardModalActive: false,
       currentItem: undefined,
+      projectsDatas : undefined,
       progress: true,
       progressType: 'is-info',
       drag: true,
     }
   },
+  methods: {
+    changeProjectsType(type) {
+      this.isActive = type
+
+      // Filter pour object via reducer
+      Object.filter = (obj, predicate) => 
+        Object.keys(obj)
+            .filter( key => predicate(obj[key]) )
+            .reduce( (res, key) => (res[key] = obj[key], res), {} );
+
+      // Si 'tous' n'est pas sélectionné
+      if (this.isActive !== 'tous') {
+      // Je filtre mon objet pour ressortir les projets du type sélectionné
+        this.projectsDatas = Object.filter(this.langs[this.activeLanguage].projects, item => item.type == this.isActive)
+      } else {
+      // Sinon je récupère tous les projets
+        this.projectsDatas = this.langs[this.activeLanguage].projects
+      }
+    }
+  },
   mounted () {
+    // Récupère tous les projets selon la langue sélectionnée
+    this.projectsDatas = this.langs[this.activeLanguage].projects
+
     // this.$nuxt.$loading.finish()
     sal({
       threshold: 0,
     });
+    
   }
 }
 </script>
