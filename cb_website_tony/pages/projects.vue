@@ -37,7 +37,9 @@
       </ul>
     </div>
 
-    <div class="project-cards">
+    <div class="project-cards" data-sal="slide-left"
+        data-sal-duration="800"
+        data-sal-easing="ease-out-bounce">
 
       <article class="project-card" 
         v-for="item in projectsDatas" 
