@@ -90,7 +90,7 @@
                     <div class="media">
                         <div class="media-left">
                             <figure class="image is-48x48">
-                                <img src="/static/img/placeholder-1280x960.png" alt="Image">
+                                <img :src="require(`../assets/img/${currentItem.logo}`)" alt="Image">
                             </figure>
                         </div>
                         <div class="media-content">

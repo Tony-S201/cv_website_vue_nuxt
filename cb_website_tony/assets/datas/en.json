@@ -10,6 +10,7 @@
             "date": "April 2019",
             "overview": "Unavailable"
         },
+        "logo": "fat_logo.png",
         "carousel": [
             { "img" : "fat-1.jpg" },
             { "img" : "fat-2.jpg" },
@@ -32,6 +33,7 @@
             "date": "August 2019",
             "overview": "https://www.tonyswierz.com/"
         },
+        "logo": "website-logo.png",
         "carousel": [
             { "img" : "cv-1.jpg" },
             { "img" : "cv-2.jpg" },
@@ -54,6 +56,7 @@
             "date": "August 2019",
             "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/"
         },
+        "logo": "markdown_logo.png",
         "carousel": [
             { "img" : "markdown_editor.jpg" }
         ],
@@ -73,6 +76,7 @@
             "date": "September 2019",
             "overview": "https://tony-s201.github.io/Font_Tester_Prod/"
         },
+        "logo": "font_logo.png",
         "carousel": [
             { "img" : "font_tester.jpg" }
         ],
