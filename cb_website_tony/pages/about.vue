@@ -2,10 +2,19 @@
   <section class="about-container">
     <h1 class="section-titles">About</h1>
     <div v-for="item in langs[languageActive].about" :key="item.id">
-      <h2 class="subtitle">{{ item.title }}</h2>
-      <p>{{ item.text }}</p>
+      <h2 class="subtitle"
+        data-sal="fade"
+        data-sal-delay="200"
+        data-sal-duration="800">{{ item.title }}</h2>
+      <p
+        data-sal="slide-left"
+        data-sal-delay="800"
+        data-sal-duration="1000">{{ item.text }}</p>
       <br>
-      <p v-if="item.text">{{ item.text_two }}</p>
+      <p v-if="item.text"
+        data-sal="slide-left"
+        data-sal-delay="800"
+        data-sal-duration="1000">{{ item.text_two }}</p>
     </div>
   </section>
 </template>
@@ -28,6 +37,9 @@ export default {
   },
   mounted () {
     // this.$nuxt.$loading.finish()
+    sal({
+      threshold: 0,
+    });
   }
 }
 </script>

@@ -13,7 +13,7 @@
     <div class="tabs is-centered projects-tabs" 
       data-sal="flip-up"
       data-sal-delay="200"
-      data-sal-duration="1000"
+      data-sal-duration="800"
       data-sal-easing="ease-out-bounce">
       <ul>
         <li @click="changeProjectsType('tous')" :class="{ 'is-active': isActive == 'tous' }">
@@ -37,9 +37,11 @@
       </ul>
     </div>
 
-    <div class="project-cards" data-sal="slide-left"
-        data-sal-duration="800"
-        data-sal-easing="ease-out-bounce">
+    <div class="project-cards" 
+      data-sal="slide-left"
+      data-sal-delay="600"
+      data-sal-duration="1000"
+      data-sal-easing="ease-out-bounce">
 
       <article class="project-card" 
         v-for="item in projectsDatas" 

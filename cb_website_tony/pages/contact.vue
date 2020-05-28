@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import sal from 'sal.js'
+
 export default {
   layout: 'inside',
   head: {
@@ -12,6 +14,9 @@ export default {
   },
   mounted () {
     // this.$nuxt.$loading.finish()
+    sal({
+      threshold: 0,
+    });
   }
 }
 </script>
