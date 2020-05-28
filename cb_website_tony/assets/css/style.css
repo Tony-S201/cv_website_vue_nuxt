@@ -198,6 +198,15 @@
     background-color: #4BCCA7;
 }
 
+.about-titles {
+    display: flex;
+    align-items: center;
+}
+
+.about-title-pictures {
+    margin-right: 0.5em;
+}
+
 .skills-container,
 .contact-container {
     background-color: #91D155;
@@ -218,7 +227,6 @@
 
 .inside-aside-menu {
     display: none;
-    background-image: url('../img/home_background_forest.jpg');
 }
 
 main {
@@ -385,7 +393,7 @@ main {
         display: block;
         width: 20%; /* Largeur du menu latéral */
         height: 100vh; /* Hauteur total du menu latéral */
-        background-color: grey;
+        background-color: #342E37;
     }
     .inside-aside-logo-container {
         width: 100%;

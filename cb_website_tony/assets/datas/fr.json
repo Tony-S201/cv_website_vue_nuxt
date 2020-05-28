@@ -9,7 +9,8 @@
             "description": "Site vitrine avec un back-office réalisé pour un groupe de musique",
             "team": "2 Développeurs React / 2 Développeurs WordPress",
             "date": "Avril 2019",
-            "overview": "Indisponible"
+            "overview": "Indisponible",
+            "linkpresent": false
         },
         "logo": "fat_logo.png",
         "carousel": [
@@ -29,10 +30,12 @@
         "image": "cv-1.jpg",
         "details": {
             "function": "Développeur Full-Stack",
-            "description": "",
-            "team": "Me",
+            "description": "Site portfolio personnel",
+            "team": "Moi-même",
             "date": "Août 2019",
-            "overview": "https://www.tonyswierz.com/"
+            "overview": "https://www.tonyswierz.com/",
+            "linkpresent": true,
+            "link": "https://www.tonyswierz.com/"
         },
         "logo": "website-logo.png",
         "carousel": [
@@ -55,7 +58,9 @@
             "description": "Application qui converti le texte en Markdown, utilisation des champs contrôllés",
             "team": "Me",
             "date": "Septembre 2019",
-            "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/"
+            "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/",
+            "linkpresent": true,
+            "link": "https://tony-s201.github.io/Markdown_Editor_Prod/"
         },
         "logo": "markdown_logo.png",
         "carousel": [
@@ -75,7 +80,9 @@
             "description": "Application responsive proposant de découvrir et d'essayer diverses polices d'écritures, avec des fonctionnalités tel que le changement de couleur ou de taille",
             "team": "Me",
             "date": "Septembre 2019",
-            "overview": "https://tony-s201.github.io/Font_Tester_Prod/"
+            "overview": "https://tony-s201.github.io/Font_Tester_Prod/",
+            "linkpresent": true,
+            "link": "https://tony-s201.github.io/Font_Tester_Prod/"
         },
         "logo": "font_logo.png",
         "carousel": [
@@ -88,18 +95,22 @@
     }
 },
 "about": {
-    "1": {
+    "aboutperson": {
         "title": "A propos",
         "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End."
     },
-    "2": {
+    "work": {
         "title": "Travail",
         "text": "Actuellement je travaille chez Monkey Monk, une entreprise sociale du numérique ayant un rôle dans l'écosystème Darwin de Bordeaux qui me tient à cœur. Ce boulot me permet de me familiariser avec les technologies Laravel, VueJS, Buefy, MongoDB, Docker, Wordpress (Divi) et VueX."
     },
-    "3": {
+    "study": {
         "title": "Etudes",
         "text": "Côté études, avant cela, j'ai réalisé 400h intensives chez O'Clock (formation 100% téléprésentielle) afin d'apprendre les langages HTML, CSS, PHP, JavaScript. Mais aussi : SASS JEST (Tests unitaires) Linux, Git, Gitflow BDD, SQL, POO, MVC BootStrap Ajax API REST Gestion de projet (cahier des charges, spec fonctionnelles, MLD, MCD, Wireframes) Méthodes agiles (SCRUM)",
         "text_two": "Ainsi que deux mois de spécialisation ReactJS (300h), dont un mois de projet FullStack en équipe de deux développeurs WordPress et deux développeurs React, me permettant d'être mis face à des problèmatiques réelles."
+    },
+    "hobbies": {
+        "title": "Hobbies",
+        "text": "Blablabla"
     }
 },
 "others": {

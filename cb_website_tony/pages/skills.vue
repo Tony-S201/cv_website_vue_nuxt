@@ -15,35 +15,35 @@
           data-sal-duration="800"
           data-sal-easing="ease-out-bounce">
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'vuejs']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-vuejs.svg"/>
             <span class="skills-items-text">VueJS, NuxtJS</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'js']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-javascript.svg"/>
             <span class="skills-items-text">JavaScript</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'react']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-react-native.svg"/>
             <span class="skills-items-text">ReactNative</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'html5']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-html-5.svg"/>
             <span class="skills-items-text">HTML</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'sass']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-sass.svg"/>
             <span class="skills-items-text">CSS, Sass</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'php']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-logo-php.svg"/>
             <span class="skills-items-text">PHP</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'laravel']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-laravel.svg"/>
             <span class="skills-items-text">Laravel</span>
           </div>
           <div class="skills-technologies-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'wordpress']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-wordpress.svg"/>
             <span class="skills-items-text">WordPress</span>
           </div>
         </div>
@@ -66,39 +66,39 @@
           data-sal-duration="800"
           data-sal-easing="ease-out-bounce">
           <div class="skills-tools-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'git']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-git.svg"/>
             <span class="skills-items-text">Git</span>
           </div>
           <div class="skills-tools-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'gitlab']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-gitlab.svg"/>
             <span class="skills-items-text">Gitlab</span>
           </div>
           <div class="skills-tools-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'github']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-github.svg"/>
             <span class="skills-items-text">Github</span>
           </div>
           <div class="skills-tools-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'slack']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-slack.svg"/>
             <span class="skills-items-text">Slack</span>
           </div>
           <div class="skills-tools-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'trello']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-trello.svg"/>
             <span class="skills-items-text">Trello</span>
           </div>
           <div class="skills-tools-items">
-            <font-awesome-icon class="icon is-large" :icon="['fab', 'npm']" aria-hidden="true"></font-awesome-icon>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-npm.svg"/>
             <span class="skills-items-text">Npm</span>
           </div>
           <div class="skills-tools-items">
-            <img class="icon is-large" src="~/assets/img/vscode.svg"/>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-vscode.svg"/>
             <span class="skills-items-text">VScode</span>
           </div>
           <div class="skills-tools-items">
-            <img class="icon is-large" src="~/assets/img/balsamiq.png"/>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/balsamiq.png"/>
             <span class="skills-items-text">Balsamiq Mockups</span>
           </div>
           <div class="skills-tools-items">
-            <img class="icon is-large" src="~/assets/img/postman.png"/>
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-postman.png"/>
             <span class="skills-items-text">Postman</span>
           </div>
         </div>
