@@ -135,7 +135,7 @@ import sal from 'sal.js'
 export default {
   layout: 'inside',
   head: {
-    title: 'Projets'
+    title: 'Projets | ST'
   },
   data () {
     return {

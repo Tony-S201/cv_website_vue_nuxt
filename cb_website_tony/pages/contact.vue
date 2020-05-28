@@ -13,7 +13,6 @@
           data-sal-duration="1000" label="Subject" label-position="on-border">
           <b-input user-scalable="no" 
                    name="subject" 
-                   placeholder="Subject"
                    maxlength="50"
                    expanded
                    >
@@ -24,7 +23,6 @@
           data-sal-delay="800"
           data-sal-duration="1000" label="Name" label-position="on-border">
             <b-input value="" 
-              placeholder="Name"
               maxlength="30"
               >
             </b-input>
@@ -34,7 +32,6 @@
           data-sal-delay="800"
           data-sal-duration="1000" label="Email" label-position="on-border">
             <b-input type="email"
-                placeholder="john.doe@gmail.com"
                 maxlength="30"
                 required>
             </b-input>
@@ -43,7 +40,7 @@
         <b-field data-sal="slide-up"
           data-sal-delay="800"
           data-sal-duration="1000" label="Message" label-position="on-border">
-          <b-input user-scalable="no" type="textarea" placeholder="Message..." required></b-input>
+          <b-input user-scalable="no" type="textarea" required></b-input>
         </b-field>
 
         <b-field data-sal="slide-up"
@@ -81,7 +78,7 @@ import sal from 'sal.js'
 export default {
   layout: 'inside',
   head: {
-    title: 'Contact'
+    title: 'Contact | ST'
   },
   mounted () {
     // this.$nuxt.$loading.finish()

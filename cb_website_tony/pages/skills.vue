@@ -115,7 +115,7 @@ import sal from 'sal.js'
 export default {
   layout: 'inside',
   head: {
-    title: 'Technologies'
+    title: 'Technologies | ST'
   },
   mounted () {
     sal();

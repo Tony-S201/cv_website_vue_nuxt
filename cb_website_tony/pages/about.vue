@@ -54,7 +54,7 @@ import sal from 'sal.js'
 export default {
   layout: 'inside',
   head: {
-    title: 'A propos'
+    title: 'A propos | ST'
   },
   data () {
     return {
