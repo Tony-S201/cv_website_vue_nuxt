@@ -433,7 +433,12 @@ main {
     }
     .inside-aside-menu-list-items {
         display: block;
-        margin-bottom: 2em;
+        font-size: 1.7em;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    .inside-aside-menu-selected {
+        color: #F0F;
     }
     .inside-aside-mentions-container {
         width: 100%;
