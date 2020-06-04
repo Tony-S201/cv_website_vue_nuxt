@@ -8,10 +8,10 @@
           </div>
           <div class="inside-aside-menu-container">
             <ul class="inside-aside-menu-list has-text-centered">
-              <nuxt-link to="/about" @click.native="menuItemSelected = 1" class="inside-aside-menu-list-items"><li v-bind:class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">About</li></nuxt-link>
-              <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">Skills</li></nuxt-link>
-              <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">Projects</li></nuxt-link>
-              <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">Contact</li></nuxt-link>
+              <nuxt-link to="/about" @click.native="menuItemSelected = 1" class="inside-aside-menu-list-items"><li v-bind:class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
+              <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
+              <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
+              <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
             </ul>
           </div>
           <footer class="inside-aside-footer-container">
@@ -100,10 +100,14 @@
 </template>
 
 <script>
+import fr from '../assets/datas/fr.json'
+import en from '../assets/datas/en.json'
+
 export default {
   data () {
     return {
       activeLanguage: this.$store.state.selectLanguage,
+      langs: { en: en, fr: fr },
       menuItemSelected: undefined,
       checked: false,
     }

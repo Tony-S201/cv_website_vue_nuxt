@@ -115,5 +115,11 @@
 },
 "others": {
 
+},
+"menu": {
+    "title_about" : "A propos",
+    "title_skills" : "Compétences",
+    "title_projects" : "Projets",
+    "title_contact" : "Contact"
 }
 }

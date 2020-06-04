@@ -114,4 +114,10 @@
 },
 "others": {
 
+},
+"menu": {
+    "title_about" : "About",
+    "title_skills" : "Skills",
+    "title_projects" : "Projects",
+    "title_contact" : "Contact"
 }}
