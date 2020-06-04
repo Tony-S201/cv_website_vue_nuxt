@@ -1,6 +1,6 @@
 <template>
   <section class="projects-container">
-    <h1 class="section-titles">Projects</h1>
+    <h1 class="section-titles">Projects {{selectLanguage}}</h1>
 
     <b-field class="projects-select">
         <b-select placeholder="Tous">
@@ -141,7 +141,7 @@ export default {
     return {
       isActive: 'tous',
       langs: { en: en, fr: fr },
-      activeLanguage: 'en',
+      activeLanguage: this.$store.state.selectLanguage,
       isCardModalActive: false,
       currentItem: undefined,
       projectsDatas : undefined,
@@ -170,15 +170,19 @@ export default {
       }
     }
   },
+  computed: {
+        selectLanguage() {
+            this.activeLanguage = this.$store.state.selectLanguage
+            this.projectsDatas = this.langs[this.activeLanguage].projects
+        }
+    },
   mounted () {
     // Récupère tous les projets selon la langue sélectionnée
     this.projectsDatas = this.langs[this.activeLanguage].projects
-
     // this.$nuxt.$loading.finish()
     sal({
       threshold: 0,
     });
-    
   }
 }
 </script>

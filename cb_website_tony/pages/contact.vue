@@ -80,6 +80,11 @@ export default {
   head: {
     title: 'Contact | ST'
   },
+  data () {
+    return {
+      activeLanguage: this.$store.state.selectLanguage
+    }
+  },
   mounted () {
     // this.$nuxt.$loading.finish()
     sal({

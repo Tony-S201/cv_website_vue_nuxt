@@ -117,6 +117,11 @@ export default {
   head: {
     title: 'Technologies | ST'
   },
+  data () {
+    return {
+      activeLanguage: this.$store.state.selectLanguage
+    }
+  },
   mounted () {
     sal();
     // this.$nuxt.$loading.finish()
