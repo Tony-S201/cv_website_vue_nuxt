@@ -107,6 +107,11 @@ export default {
       checked: false,
     }
   },
+  computed: {
+    selectLanguage() {
+        this.activeLanguage = this.$store.state.selectLanguage
+    }
+  },
   methods: {
     // Function to test custom loading
     goTo(location) {

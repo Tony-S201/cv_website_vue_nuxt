@@ -50,6 +50,7 @@
 import fr from '../assets/datas/fr.json'
 import en from '../assets/datas/en.json'
 import sal from 'sal.js' 
+import { mapState } from 'vuex'
 
 export default {
   layout: 'inside',
@@ -59,11 +60,12 @@ export default {
   data () {
     return {
       langs: { en: en , fr: fr },
-      activeLanguage: this.$store.state.selectLanguage,
     }
   },
+  computed: mapState({
+    activeLanguage: state => state.selectLanguage,
+  }),
   mounted () {
-    // this.$nuxt.$loading.finish()
     sal({
       threshold: 0,
     });

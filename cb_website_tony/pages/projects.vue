@@ -171,11 +171,12 @@ export default {
     }
   },
   computed: {
-        selectLanguage() {
-            this.activeLanguage = this.$store.state.selectLanguage
-            this.projectsDatas = this.langs[this.activeLanguage].projects
-        }
-    },
+    selectLanguage() {
+        this.activeLanguage = this.$store.state.selectLanguage
+        this.projectsDatas = this.langs[this.activeLanguage].projects
+        this.isActive = 'tous'
+    }
+  },
   mounted () {
     // Récupère tous les projets selon la langue sélectionnée
     this.projectsDatas = this.langs[this.activeLanguage].projects

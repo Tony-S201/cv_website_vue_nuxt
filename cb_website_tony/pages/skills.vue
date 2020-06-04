@@ -111,17 +111,16 @@
 import fr from '../assets/datas/fr.json'
 import en from '../assets/datas/en.json'
 import sal from 'sal.js'
+import { mapState } from 'vuex'
 
 export default {
   layout: 'inside',
   head: {
     title: 'Technologies | ST'
   },
-  data () {
-    return {
-      activeLanguage: this.$store.state.selectLanguage
-    }
-  },
+  computed: mapState({
+    activeLanguage: state => state.selectLanguage,
+  }),
   mounted () {
     sal();
     // this.$nuxt.$loading.finish()
