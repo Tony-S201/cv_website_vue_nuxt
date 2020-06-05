@@ -1,5 +1,11 @@
 <template>
   <section class="legalmentions-container">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><nuxt-link to="/">Accueil</nuxt-link></li>
+        <li class="is-active"><a href="#" aria-current="page">Mentions Légales</a></li>
+      </ul>
+    </nav>
     <h2 class="has-text-weight-bold is-size-3-desktop">Informations légales</h2>
     <div class="legalmentions-block">
         <h3 class="has-text-weight-bold">1. Présentation du site.</h3>

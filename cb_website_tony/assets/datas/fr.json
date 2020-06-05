@@ -113,10 +113,24 @@
         "text": "Blablabla"
     }
 },
-"others": {
+"skills": {
 
 },
+"contact": {
+    "titles" : {
+        "form": "Formulaire",
+        "localisation": "Localisation"
+    },
+    "formdetails" : {
+        "subject": "Sujet",
+        "name": "Nom",
+        "email": "Adresse e-mail",
+        "message": "Message",
+        "send": "Envoyer"
+    }
+},
 "menu": {
+    "title_home" : "Accueil",
     "title_about" : "A propos",
     "title_skills" : "Compétences",
     "title_projects" : "Projets",

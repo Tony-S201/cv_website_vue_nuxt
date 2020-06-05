@@ -1,5 +1,11 @@
 <template>
   <section class="projects-container">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><nuxt-link to="/">{{ langs[activeLanguage].menu.title_home }}</nuxt-link></li>
+        <li class="is-active"><a href="#" aria-current="page">{{ langs[activeLanguage].menu.title_projects }}</a></li>
+      </ul>
+    </nav>
     <h1 class="section-titles">Projects {{selectLanguage}}</h1>
 
     <b-field class="projects-select">

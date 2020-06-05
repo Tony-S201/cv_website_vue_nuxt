@@ -1,5 +1,11 @@
 <template>
   <section class="contact-container">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><nuxt-link to="/">{{ langs[activeLanguage].menu.title_home }}</nuxt-link></li>
+        <li class="is-active"><a href="#" aria-current="page">{{ langs[activeLanguage].menu.title_contact }}</a></li>
+      </ul>
+    </nav>
     <h1 class="section-titles">Contact</h1>
     <div class="contact-flex-container">
       
@@ -7,7 +13,7 @@
         <h2 class="subtitle contact-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800">Formulaire</h2>
+          data-sal-duration="800">{{ langs[activeLanguage].contact.titles.form }}</h2>
         <b-field data-sal="slide-up"
           data-sal-delay="800"
           data-sal-duration="1000" label="Subject" label-position="on-border">
@@ -47,8 +53,8 @@
           data-sal-delay="800"
           data-sal-duration="1000">
           <p class="control">
-            <button class="button is-primary">
-              Send message
+            <button class="button is-white">
+              {{ langs[activeLanguage].contact.formdetails.send }}
             </button>
           </p>
         </b-field>
@@ -58,7 +64,7 @@
         <h2 class="subtitle contact-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800">Localisation</h2>
+          data-sal-duration="800">{{ langs[activeLanguage].contact.titles.localisation }}</h2>
         <iframe data-sal="slide-up"
           data-sal-delay="800"
           data-sal-duration="1000" 
@@ -80,6 +86,11 @@ export default {
   layout: 'inside',
   head: {
     title: 'Contact | ST'
+  },
+  data () {
+    return {
+      langs: { en: en , fr: fr },
+    }
   },
   computed: mapState({
     activeLanguage: state => state.selectLanguage,
