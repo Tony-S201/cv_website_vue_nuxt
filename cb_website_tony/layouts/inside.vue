@@ -22,7 +22,7 @@
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>
             </div>
             <div class="inside-aside-mentions-container has-text-centered">
-              <a href="#">Mentions Légales</a>
+              <nuxt-link to="/legal-mentions">Mentions Légales</nuxt-link>
               <p>Copyright Swierz Tony 2020</p>
             </div> 
           </footer> 
