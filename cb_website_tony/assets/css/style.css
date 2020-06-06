@@ -362,8 +362,18 @@ main {
 }
 
 .about-steps .step-marker {
-    
+    /*  */
 }
+
+.about-subcontainer {
+    display: flex;
+    width: 100%;
+}
+
+.about-text, .about-steps {
+    width: 50%;
+}
+
 /* background-image: url('../img/home_background_forest.jpg'); */
 
 /* Medium devices (tablets, 768px and up) */

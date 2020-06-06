@@ -7,8 +7,8 @@
       </ul>
     </nav>
     <h1 class="section-titles">About</h1>
-    <div>
-      <div>
+    <div class="about-subcontainer">
+      <div class="about-text">
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
@@ -51,8 +51,8 @@
 
       </div>
       <div class="about-steps">
-        <b-steps>
-          <b-step-item label="Monkey Monk" icon="account-key">
+        <b-steps vertical >
+          <b-step-item label="Monkey Monk" icon="account-key" clickable="true" >
             <h2 class="subtitle about-titles has-text-weight-bold">
               {{ langs[activeLanguage].about.experience.first.enterprise }}
             </h2>
@@ -61,7 +61,7 @@
             </p>
 
           </b-step-item>
-          <b-step-item label="O'clock" icon="account">
+          <b-step-item label="O'clock" icon="account" clickable="true">
             <h2 class="subtitle about-titles has-text-weight-bold">
               {{ langs[activeLanguage].about.experience.second.enterprise }}
             </h2>
