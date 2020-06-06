@@ -12,51 +12,62 @@
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-administrateur-homme-100.png"/>{{ langs[activeLanguage].about.aboutperson.title }}</h2>
+          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-administrateur-homme-100.png"/>{{ langs[activeLanguage].about.text.aboutperson.title }}</h2>
           
         <p
           data-sal="slide-left"
           data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.aboutperson.text }}</p>
+          data-sal-duration="1000">{{ langs[activeLanguage].about.text.aboutperson.text }}</p>
         <br>
         
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-ordinateur-100.png"/>{{ langs[activeLanguage].about.work.title }}</h2>
+          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-ordinateur-100.png"/>{{ langs[activeLanguage].about.text.work.title }}</h2>
         <p
           data-sal="slide-left"
           data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.work.text }}</p>
+          data-sal-duration="1000">{{ langs[activeLanguage].about.text.work.text }}</p>
         <br>
         
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-étagère-à-livres-100.png"/>{{ langs[activeLanguage].about.study.title }}</h2>
+          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-étagère-à-livres-100.png"/>{{ langs[activeLanguage].about.text.study.title }}</h2>
         <p
           data-sal="slide-left"
           data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.study.text }}</p>
+          data-sal-duration="1000">{{ langs[activeLanguage].about.text.study.text }}</p>
         <br>
 
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-masque-tuba-100.png"/>{{ langs[activeLanguage].about.hobbies.title }}</h2>
+          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-masque-tuba-100.png"/>{{ langs[activeLanguage].about.text.hobbies.title }}</h2>
         <p
           data-sal="slide-left"
           data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.hobbies.text }}</p>
+          data-sal-duration="1000">{{ langs[activeLanguage].about.text.hobbies.text }}</p>
 
       </div>
       <div class="about-steps">
         <b-steps>
           <b-step-item label="Monkey Monk" icon="account-key">
-            Blablablablablablablablabla
+            <h2 class="subtitle about-titles has-text-weight-bold">
+              {{ langs[activeLanguage].about.experience.first.enterprise }}
+            </h2>
+            <p>
+              {{ langs[activeLanguage].about.experience.first.description }}
+            </p>
+
           </b-step-item>
           <b-step-item label="O'clock" icon="account">
-            Blablablablablablablablabla
+            <h2 class="subtitle about-titles has-text-weight-bold">
+              {{ langs[activeLanguage].about.experience.second.enterprise }}
+            </h2>
+            <p>
+              {{ langs[activeLanguage].about.experience.second.description }}
+            </p>
           </b-step-item>
         </b-steps>
       </div>
