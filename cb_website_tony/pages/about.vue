@@ -31,6 +31,10 @@
 
       </div>
       <div class="about-steps">
+        <h2 class="subtitles-group is-size-4 has-text-weight-bold has-text-centered"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="800">{{ langs[activeLanguage].about.experience.title }}</h2>
         <b-steps class="about-steps-container" 
           :label-position="labelPosition"
           vertical >

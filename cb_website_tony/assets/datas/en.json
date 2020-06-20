@@ -105,6 +105,7 @@
         }
     },
     "experience": {
+        "title": "Experience",
         "first": {
             "enterprise": "Monkey Monk",
             "description": "Actuellement je travaille chez Monkey Monk, une entreprise sociale du numérique ayant un rôle dans l'écosystème Darwin de Bordeaux. Ce boulot me permet de me familiariser avec les technologies Laravel, VueJS, Buefy, MongoDB, Docker, Wordpress (Divi) et VueX.",

@@ -376,6 +376,10 @@ main {
     background: transparent;  
 }
 
+.subtitles-group {
+    margin-bottom: 2rem;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
     .home-goto-container {

@@ -10,7 +10,7 @@
     <div class="contact-flex-container">
       
       <div class="contact-form-container">
-        <h2 class="subtitle contact-titles has-text-weight-bold"
+        <h2 class="subtitles-group is-size-4 has-text-weight-bold has-text-centered"
           data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="800">{{ langs[activeLanguage].contact.titles.form }}</h2>
@@ -61,7 +61,7 @@
       </div>
 
       <div class="contact-map-container">
-        <h2 class="subtitle contact-titles has-text-weight-bold"
+        <h2 class="subtitles-group is-size-4 has-text-weight-bold has-text-centered"
           data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="800">{{ langs[activeLanguage].contact.titles.localisation }}</h2>
