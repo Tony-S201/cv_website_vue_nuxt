@@ -9,6 +9,10 @@
     <h1 class="section-titles">About</h1>
     <div class="about-subcontainer">
       <div class="about-text">
+        <h2 class="subtitles-group is-size-4 has-text-weight-bold has-text-centered"
+          data-sal="fade"
+          data-sal-delay="200"
+          data-sal-duration="800">{{ langs[activeLanguage].about.text.title }}</h2>
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
