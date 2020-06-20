@@ -169,13 +169,11 @@
 .inside-menu {
     display: none;
 }
-
 .inside-select-language button {
     border: 0;
     margin-top: 17px;
     margin-right: 15px;
 }
-
 .inside-select-language-bubble {
     margin-right: 8px;
 }
@@ -203,7 +201,6 @@
     display: flex;
     align-items: center;
 }
-
 .about-title-pictures {
     margin-right: 0.5em;
 }
@@ -225,7 +222,6 @@
 .inside-tablet-block {
     display: none;
 }
-
 .inside-aside-menu {
     display: none;
 }
@@ -242,14 +238,12 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
 .project-card {
     padding: 1vh;
     width: 100%;
     max-width: 100%;
     margin-bottom: 5%;
 }
-
 .project-card-container {
     height: 100%;
     padding: 1vh;
@@ -257,28 +251,22 @@ main {
     box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
     cursor: pointer;
 }
-
 .project-card-section-informations {
     margin: 0.6em 0;
 }
-
 .project-card-content-date {
     display: block;
     margin-top: 0.6em;
 }
-
 .projects-tabs {
     display: none;
 }
-
 .projects-modal-taglist {
     margin-left: 1em;
 }
-
 .projects-modal-team {
     margin-left: 0.6em;
 }
-
 .projects-modal-row-datelink {
     display: flex;
     justify-content: space-between;
@@ -292,7 +280,6 @@ main {
 .tags {
     margin-bottom: 0.5rem !important;
 }
-
 .tags .tag {
     margin-bottom : 0;
 }
@@ -300,25 +287,21 @@ main {
 .skills-blocks-container {
     width: 100%;
 }
-
 .skills-titles {
     margin: 2em 0;
     font-size: 1.5em;
 }
-
 .skills-center-line {
     display: none;
     width: 2px;
     background-color: #000;
 }
-
 .skills-technologies-container,
 .skills-tools-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-
 .skills-technologies-items,
 .skills-tools-items {
     display: flex;
@@ -328,7 +311,6 @@ main {
     padding: 1em;
     width: calc(100%/3);
 }
-
 .skills-items-text {
     font-size: 0.7em;
 }
@@ -342,11 +324,9 @@ main {
     margin-bottom: 2em;
     width: 100%;
 }
-
 .contact-map-container {
     width: 100%;
 }
-
 .contact-map {
     height: 400px;
 }
@@ -354,7 +334,6 @@ main {
 .legalmentions-container {
     padding: 3%;
 }
-
 .legalmentions-block {
     margin: 20px 0;
 }
@@ -362,25 +341,40 @@ main {
 .about-steps .step-link .step-details {
     background: transparent !important;
 }
-
-.about-steps .step-marker {
-    /*  */
-}
-
 .about-subcontainer {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
-
+.about-text {
+    margin-bottom: 2rem;
+}
 .about-text, .about-steps {
-    width: 50%;
+    width: 100%;
+}
+.about-steps-container {
+    justify-content: center;
+}
+.about-steps .b-steps .steps .step-items .step-item:first-child .step-marker {
+    background-image: url('../img/about-icons/logo-monkey.png');
+    background-position: center;
+    background-size: cover;
+}
+.about-steps .b-steps .steps .step-items .step-item:nth-child(2) .step-marker {
+    background-image: url('../img/about-icons/logo-oclock.png');
+    background-position: center;
+    background-size: cover;
+}
+.about-steps-paragraphs {
+    padding-bottom: 1rem;
+}
+.step-navigation {
+    text-align: center;
 }
 
 .lab-navbar {
     background: transparent;  
 }
-
-/* background-image: url('../img/home_background_forest.jpg'); */
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -589,6 +583,15 @@ main {
         bottom: 0px;
         height: auto;
         z-index: 1;
+    }
+    .about-text, .about-steps {
+        width: 47.5%;
+    }
+    .about-text {
+        padding-right: 2.5%;
+    }
+    .about-steps {
+        padding-left: 2.5%;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */

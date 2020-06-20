@@ -38,11 +38,12 @@
           <span></span>
           <span></span>
           <ul class="inside-menu-burger-list">
-            <div class="inside-menu-burger-list-container">
-              <nuxt-link to="/about" v-on:@click.native="menuItemSelected = 1" class="inside-aside-menu-list-items has-text-black"><li v-bind:class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">About</li></nuxt-link>
-              <nuxt-link to="/skills" v-on:@click.native="menuItemSelected = 2" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">Skills</li></nuxt-link>
-              <nuxt-link to="/projects" v-on:@click.native="menuItemSelected = 3" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">Projects</li></nuxt-link>
-              <nuxt-link to="/contact" v-on:@click.native="menuItemSelected = 4" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">Contact</li></nuxt-link>
+            <div class="inside-menu-burger-list-container has-text-centered">
+              <nuxt-link to="/about" @click.native="menuItemSelected = 1" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
+              <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
+              <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
+              <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
+              <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
             </div>
           </ul>
         </div>

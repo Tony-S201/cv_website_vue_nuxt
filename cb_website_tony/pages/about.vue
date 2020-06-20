@@ -19,26 +19,6 @@
           data-sal-delay="800"
           data-sal-duration="1000">{{ langs[activeLanguage].about.text.aboutperson.text }}</p>
         <br>
-        
-        <h2 class="subtitle about-titles has-text-weight-bold"
-          data-sal="fade"
-          data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-ordinateur-100.png"/>{{ langs[activeLanguage].about.text.work.title }}</h2>
-        <p
-          data-sal="slide-left"
-          data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.text.work.text }}</p>
-        <br>
-        
-        <h2 class="subtitle about-titles has-text-weight-bold"
-          data-sal="fade"
-          data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-étagère-à-livres-100.png"/>{{ langs[activeLanguage].about.text.study.title }}</h2>
-        <p
-          data-sal="slide-left"
-          data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.text.study.text }}</p>
-        <br>
 
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
@@ -51,22 +31,33 @@
 
       </div>
       <div class="about-steps">
-        <b-steps vertical >
-          <b-step-item label="Monkey Monk" icon="account-key" clickable="true" >
+        <b-steps class="about-steps-container" 
+          :label-position="labelPosition"
+          vertical >
+          <b-step-item class="about-steps-first" :label="this.langs[this.activeLanguage].about.experience.first.date + ' - ' + this.langs[this.activeLanguage].about.experience.first.enterprise" icon="" :clickable="clickable" >
             <h2 class="subtitle about-titles has-text-weight-bold">
               {{ langs[activeLanguage].about.experience.first.enterprise }}
             </h2>
-            <p>
+            <p class="about-steps-paragraphs">
               {{ langs[activeLanguage].about.experience.first.description }}
+            </p>
+            <p class="about-steps-paragraphs">
+              {{ langs[activeLanguage].about.experience.first.description_second }}
             </p>
 
           </b-step-item>
-          <b-step-item label="O'clock" icon="account" clickable="true">
+          <b-step-item class="about-steps-second" :label="this.langs[this.activeLanguage].about.experience.second.date + ' - ' + this.langs[this.activeLanguage].about.experience.second.enterprise" icon="" :clickable="clickable">
             <h2 class="subtitle about-titles has-text-weight-bold">
               {{ langs[activeLanguage].about.experience.second.enterprise }}
             </h2>
-            <p>
+            <p class="about-steps-paragraphs">
               {{ langs[activeLanguage].about.experience.second.description }}
+            </p>
+            <p class="about-steps-paragraphs">
+              {{ langs[activeLanguage].about.experience.second.description_second }}
+            </p>
+            <p class="about-steps-paragraphs">
+              {{ langs[activeLanguage].about.experience.second.description_third }}
             </p>
           </b-step-item>
         </b-steps>
@@ -89,6 +80,10 @@ export default {
   data () {
     return {
       langs: { en: en , fr: fr },
+      labelPosition: "right",
+      clickable: true,
+      labelFirst: '',
+      labelSecond: '',
     }
   },
   computed: mapState({
