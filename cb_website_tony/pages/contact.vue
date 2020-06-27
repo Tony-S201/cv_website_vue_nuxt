@@ -14,50 +14,63 @@
           data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="800">{{ langs[activeLanguage].contact.titles.form }}</h2>
-        <b-field data-sal="slide-up"
-          data-sal-delay="800"
-          data-sal-duration="1000" label="Subject" label-position="on-border">
-          <b-input user-scalable="no" 
-                   name="subject" 
-                   maxlength="50"
-                   expanded
-                   >
-          </b-input>
-        </b-field>
 
-        <b-field data-sal="slide-up"
-          data-sal-delay="800"
-          data-sal-duration="1000" label="Name" label-position="on-border">
-            <b-input value="" 
-              maxlength="30"
-              >
+        <form class="contact-form" @submit.prevent="sendEmail">
+          <b-field data-sal="slide-up"
+            data-sal-delay="800"
+            data-sal-duration="1000" label="Subject" label-position="on-border">
+            <b-input user-scalable="no" 
+                    name="subject" 
+                    maxlength="50"
+                    v-model="form.subject"
+                    expanded
+                    >
             </b-input>
-        </b-field>
+          </b-field>
 
-        <b-field data-sal="slide-up"
-          data-sal-delay="800"
-          data-sal-duration="1000" label="Email" label-position="on-border">
-            <b-input type="email"
+          <b-field data-sal="slide-up"
+            data-sal-delay="800"
+            data-sal-duration="1000" label="Name" label-position="on-border">
+              <b-input
+                name="user_name"
                 maxlength="30"
-                required>
-            </b-input>
-        </b-field>
+                v-model="form.name"
+                >
+              </b-input>
+          </b-field>
 
-        <b-field data-sal="slide-up"
-          data-sal-delay="800"
-          data-sal-duration="1000" label="Message" label-position="on-border">
-          <b-input user-scalable="no" type="textarea" required></b-input>
-        </b-field>
+          <b-field data-sal="slide-up"
+            data-sal-delay="800"
+            data-sal-duration="1000" label="Email" label-position="on-border">
+              <b-input type="email"
+                  name="user_email"
+                  maxlength="100"
+                  v-model="form.email"
+                  required>
+              </b-input>
+          </b-field>
 
-        <b-field data-sal="slide-up"
-          data-sal-delay="800"
-          data-sal-duration="1000">
-          <p class="control">
-            <button class="button is-white">
-              {{ langs[activeLanguage].contact.formdetails.send }}
-            </button>
-          </p>
-        </b-field>
+          <b-field data-sal="slide-up"
+            data-sal-delay="800"
+            data-sal-duration="1000" label="Message" label-position="on-border">
+            <b-input name="message" user-scalable="no" v-model="form.message" type="textarea" maxlength="8000" required></b-input>
+          </b-field>
+
+          <b-field data-sal="slide-up"
+            data-sal-delay="800"
+            data-sal-duration="1000">
+            <p class="control">
+              <input type="submit" :value="langs[activeLanguage].contact.formdetails.send" class="button is-white">
+            </p>
+          </b-field>
+          <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
+        </form>
+        <b-message v-if="form.isSend" type="is-success" has-icon>
+          Message envoyé !
+        </b-message>
+        <b-message v-if="form.isError" type="is-danger" has-icon>
+          Erreur, veuillez réessayer ultérieurement
+        </b-message>
       </div>
 
       <div class="contact-map-container">
@@ -80,6 +93,7 @@
 import fr from '../assets/datas/fr.json'
 import en from '../assets/datas/en.json'
 import sal from 'sal.js'
+import emailjs from 'emailjs-com'
 import { mapState } from 'vuex'
 
 export default {
@@ -89,14 +103,47 @@ export default {
   },
   data () {
     return {
+      isLoading: false,
+      isFullPage: false,
       langs: { en: en , fr: fr },
+      form: {
+        name: "",
+        subject: "",
+        email: "",
+        message: "",
+        isSend: false,
+        isError: false
+      },
     }
   },
   computed: mapState({
     activeLanguage: state => state.selectLanguage,
   }),
+  methods: {
+    sendEmail: function(e) {
+      this.isLoading = true
+      emailjs.sendForm('gmail', 'template_apzEGNSR', e.target, 'user_Rr69M2J8TRMrN9QMAEuvQ')
+        .then((result) => {
+            // console.log('SUCCESS!', result.status, result.text);
+            this.isLoading = false
+            this.form.isSend = true
+            setTimeout(function () {
+              this.form.isSend = false;
+            }.bind(this), 3000);
+            this.form.name = ""
+            this.form.subject = ""
+            this.form.email = ""
+            this.form.message = ""
+        }, (error) => {
+            // console.log('FAILED...', error);
+            this.form.isError = true
+            setTimeout(function () {
+              this.form.isError = false;
+            }.bind(this), 3000);
+        });
+    },
+  },
   mounted () {
-    // this.$nuxt.$loading.finish()
     sal({
       threshold: 0,
     });

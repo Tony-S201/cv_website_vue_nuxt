@@ -76,6 +76,10 @@
             <span class="skills-items-text">Git</span>
           </div>
           <div class="skills-tools-items">
+            <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-docker.svg"/>
+            <span class="skills-items-text">Docker</span>
+          </div>
+          <div class="skills-tools-items">
             <img class="image is-48x48" src="~/assets/img/skills-icons/icons8-gitlab.svg"/>
             <span class="skills-items-text">Gitlab</span>
           </div>

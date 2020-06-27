@@ -324,6 +324,9 @@ main {
     margin-bottom: 2em;
     width: 100%;
 }
+.contact-form {
+    margin-bottom: 30px;
+}
 .contact-map-container {
     width: 100%;
 }
