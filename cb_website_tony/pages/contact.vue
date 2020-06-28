@@ -18,7 +18,7 @@
         <form class="contact-form" @submit.prevent="sendEmail">
           <b-field data-sal="slide-up"
             data-sal-delay="800"
-            data-sal-duration="1000" label="Subject" label-position="on-border">
+            data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.subject" label-position="on-border">
             <b-input user-scalable="no" 
                     name="subject" 
                     maxlength="50"
@@ -30,7 +30,7 @@
 
           <b-field data-sal="slide-up"
             data-sal-delay="800"
-            data-sal-duration="1000" label="Name" label-position="on-border">
+            data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.name" label-position="on-border">
               <b-input
                 name="user_name"
                 maxlength="30"
@@ -41,7 +41,7 @@
 
           <b-field data-sal="slide-up"
             data-sal-delay="800"
-            data-sal-duration="1000" label="Email" label-position="on-border">
+            data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.email" label-position="on-border">
               <b-input type="email"
                   name="user_email"
                   maxlength="100"
@@ -52,7 +52,7 @@
 
           <b-field data-sal="slide-up"
             data-sal-delay="800"
-            data-sal-duration="1000" label="Message" label-position="on-border">
+            data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.message" label-position="on-border">
             <b-input name="message" user-scalable="no" v-model="form.message" type="textarea" maxlength="8000" required></b-input>
           </b-field>
 
@@ -66,10 +66,10 @@
           <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
         </form>
         <b-message v-if="form.isSend" type="is-success" has-icon>
-          Message envoyé !
+          {{ langs[activeLanguage].contact.formdetails.success }}
         </b-message>
         <b-message v-if="form.isError" type="is-danger" has-icon>
-          Erreur, veuillez réessayer ultérieurement
+          {{ langs[activeLanguage].contact.formdetails.error }}
         </b-message>
       </div>
 

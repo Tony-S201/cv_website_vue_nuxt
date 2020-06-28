@@ -151,7 +151,9 @@
         "name": "Nom",
         "email": "Adresse e-mail",
         "message": "Message",
-        "send": "Envoyer"
+        "send": "Envoyer",
+        "error": "Erreur, veuillez réessayer ultérieurement",
+        "success": "Message envoyé avec succès"
     }
 },
 "menu": {

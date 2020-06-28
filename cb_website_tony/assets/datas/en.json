@@ -150,7 +150,9 @@
         "name": "Name",
         "email": "Mail Address",
         "message": "Message",
-        "send": "Send message"
+        "send": "Send message",
+        "error": "Error, please try again later",
+        "success": "Message sent successfully"
     }
 },
 "menu": {
