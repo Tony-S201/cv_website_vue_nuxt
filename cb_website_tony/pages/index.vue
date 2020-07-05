@@ -1,7 +1,7 @@
 <template>
   <section class="home-layout-container">
 
-    <div class="home-select-language-row has-text-left">
+    <!-- <div class="home-select-language-row has-text-left">
       <b-dropdown v-model="selectLanguage" aria-role="list">
         <button class="button" type="button" slot="trigger">
             <template v-if="selectLanguage == 'FR'">
@@ -34,7 +34,7 @@
             </div>
         </b-dropdown-item>
       </b-dropdown>
-    </div>
+    </div> -->
 
     <div class='home-title-one console-container'>
       <span id='text'></span>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="home-goto-container has-text-centered">
-      <b-button class="home-goto-button"><nuxt-link to="/about">Voir le portfolio</nuxt-link></b-button>
+      <b-button class="home-goto-button"><nuxt-link to="/about">Go !</nuxt-link></b-button>
       <div class="home-goto-icon">
         <font-awesome-icon :icon="['fas', 'hand-pointer']" aria-hidden="true"></font-awesome-icon>
       </div>
@@ -57,11 +57,11 @@ export default {
   head: {
     title: 'Tony Swierz | Développeur Web'
   },
-  data () {
+  /* data () {
     return {
       selectLanguage: 'FR'
     }
-  },
+  }, */
   mounted () {
     if (process.browser) {
       require('~/assets/js/title.js')

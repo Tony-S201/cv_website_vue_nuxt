@@ -12,8 +12,8 @@
               <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
               <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
               <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
-              <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
-            </ul>
+<!--               <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
+ -->            </ul>
           </div>
           <footer class="inside-aside-footer-container">
             <div class="inside-aside-mentions-networks has-text-centered">
@@ -43,8 +43,8 @@
               <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
               <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
               <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
-              <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
-            </div>
+<!--               <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
+ -->            </div>
           </ul>
         </div>
 
@@ -110,7 +110,7 @@ export default {
     return {
       activeLanguage: this.$store.state.selectLanguage,
       langs: { en: en, fr: fr },
-      menuItemSelected: undefined,
+      menuItemSelected: 1,
       checked: false,
     }
   },
