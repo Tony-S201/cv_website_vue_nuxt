@@ -4,6 +4,10 @@ export default {
   /*
   ** Headers of the page
   */
+  googleAnalytics: {
+    id: "UA-145123315-1",
+    dev: false
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -40,21 +44,43 @@ export default {
   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
+    '@nuxtjs/google-analytics',
     'nuxt-buefy',
     [
       'nuxt-fontawesome', {
         imports: [
-         {
-           set: '@fortawesome/free-solid-svg-icons',
-           icons: ['fas']
-         },
-         {
-           set:'@fortawesome/free-brands-svg-icons',
-           icons: ['fab']
-         }
-       ]
-      }]
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set:'@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ],
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    path: '/tonyswierz.com.xml',
+    hostname: 'https://tonyswierz.com',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false,
+    routes: [
+      '/',
+      '/about',
+      '/skills',
+      '/projects',
+      '/contact',
+    ].map(route => ({
+      url: route,
+      changefreq: 'monthly',
+      priority: 1,
+      lastmodISO: new Date().toISOString().split('T')[0]
+    }))
+  },
   /*
   ** Build configuration
   */
