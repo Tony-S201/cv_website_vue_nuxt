@@ -1,29 +1,114 @@
 {"projects": {
     "1": {
-        "title": "The FAT Bastard GangBang",
+        "title": "Console Conciergerie Solidaire",
         "type": "web",
-        "image": "fat-1.jpg",
+        "image": "console-1.png",
         "details": {
-            "function": "Front-End Developer",
-            "description": "Website created for a music band",
-            "team": "2 React Developers / 2 WordPress Developers",
-            "date": "April 2019",
+            "function": "Full-Stack Developer",
+            "description": "Maintenance and new features of Conciergerie Solidaire 'console' internal tool, allowing the management of logistics and platform subscribers.",
+            "team": "Me",
+            "date": "October 2019 to July 2020",
             "overview": "Unavailable",
             "linkpresent": false
         },
-        "logo": "fat_logo.png",
+        "logo": "console-logo.png",
         "carousel": [
-            { "img" : "fat-1.jpg" },
-            { "img" : "fat-2.jpg" },
-            { "img" : "fat-3.jpg" }
+            { "img" : "console-1.png" }
         ],
         "technologies": [
-            { "name" : "React" },
-            { "name" : "WordPress" },
-            { "name" : "Sass" }
+            { "name" : "VueJS" },
+            { "name" : "Laravel" },
+            { "name" : "Scss" },
+            { "name" : "MongoDB" }
         ]
     },
     "2": {
+        "title": "Darwin Camp",
+        "type": "web",
+        "image": "darwin-1.JPG",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "Redesign of the home page. It is the showcase site of Darwin-Ecosystem.",
+            "team": "Me",
+            "date": "January 2020",
+            "overview": "https://darwin.camp/",
+            "linkpresent": true,
+            "link": "https://darwin.camp/"
+        },
+        "logo": "darwin-logo.jpg",
+        "carousel": [
+            { "img" : "darwin-1.JPG" }
+        ],
+        "technologies": [
+            { "name" : "WordPress" }
+        ]
+    },
+    "3": {
+        "title": "Miuseec",
+        "type": "web",
+        "image": "miuseec-1.png",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "New feature on the Miuseec tool. It is a tool that allows the management of members and room reservations for the coworking space of Darwin.",
+            "team": "Me",
+            "date": "Novembre 2019",
+            "overview": "Unavailable",
+            "linkpresent": false
+        },
+        "logo": "miuseec-logo.jpg",
+        "carousel": [
+            { "img" : "miuseec-1.png" }
+        ],
+        "technologies": [
+            { "name" : "Symfony 2" },
+            { "name" : "Twig" }
+        ]
+    },
+    "4": {
+        "title": "Font Tester",
+        "type": "web",
+        "image": "font_tester.jpg",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "Try and discovers new fonts, use the color picker and more !",
+            "team": "Me",
+            "date": "September 2019",
+            "overview": "https://tony-s201.github.io/Font_Tester_Prod/",
+            "linkpresent": true,
+            "link": "https://tony-s201.github.io/Font_Tester_Prod/"
+        },
+        "logo": "font_logo.png",
+        "carousel": [
+            { "img" : "font_tester.jpg" }
+        ],
+        "technologies": [
+            { "name" : "React" },
+            { "name" : "Css" }
+        ]
+    },
+    "5": {
+        "title": "Markdown Editor",
+        "type": "web",
+        "image": "markdown_editor.jpg",
+        "details": {
+            "function": "Full-Stack Developer",
+            "description": "Application which convert text in Markdown, using controlled fields",
+            "team": "Me",
+            "date": "September 2019",
+            "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/",
+            "linkpresent": true,
+            "link": "https://tony-s201.github.io/Markdown_Editor_Prod/"
+        },
+        "logo": "markdown_logo.png",
+        "carousel": [
+            { "img" : "markdown_editor.jpg" }
+        ],
+        "technologies": [
+            { "name" : "React" },
+            { "name" : "Sass" }
+        ]
+    },
+    "6": {
         "title": "Portfolio Website v1",
         "type": "web",
         "image": "cv-1.jpg",
@@ -48,48 +133,28 @@
             { "name" : "XML" }
         ]
     },
-    "3": {
-        "title": "Markdown Editor",
+    "7": {
+        "title": "The FAT Bastard GangBang",
         "type": "web",
-        "image": "markdown_editor.jpg",
+        "image": "fat-1.jpg",
         "details": {
-            "function": "Full-Stack Developer",
-            "description": "Application which convert text in Markdown, using controlled fields",
-            "team": "Me",
-            "date": "August 2019",
-            "overview": "https://tony-s201.github.io/Markdown_Editor_Prod/",
-            "linkpresent": true,
-            "link": "https://tony-s201.github.io/Markdown_Editor_Prod/"
+            "function": "Front-End Developer",
+            "description": "Website created for a music band",
+            "team": "2 React Developers / 2 WordPress Developers",
+            "date": "April 2019",
+            "overview": "Unavailable",
+            "linkpresent": false
         },
-        "logo": "markdown_logo.png",
+        "logo": "fat_logo.png",
         "carousel": [
-            { "img" : "markdown_editor.jpg" }
+            { "img" : "fat-1.jpg" },
+            { "img" : "fat-2.jpg" },
+            { "img" : "fat-3.jpg" }
         ],
         "technologies": [
             { "name" : "React" },
+            { "name" : "WordPress" },
             { "name" : "Sass" }
-        ]
-    },
-    "4": {
-        "title": "Font Tester",
-        "type": "web",
-        "image": "font_tester.jpg",
-        "details": {
-            "function": "Full-Stack Developer",
-            "description": "Try and discovers new fonts, use the color picker and more !",
-            "team": "Me",
-            "date": "September 2019",
-            "overview": "https://tony-s201.github.io/Font_Tester_Prod/",
-            "linkpresent": true,
-            "link": "https://tony-s201.github.io/Font_Tester_Prod/"
-        },
-        "logo": "font_logo.png",
-        "carousel": [
-            { "img" : "font_tester.jpg" }
-        ],
-        "technologies": [
-            { "name" : "React" },
-            { "name" : "Css" }
         ]
     }
 },
@@ -109,15 +174,15 @@
         "title": "Experience",
         "first": {
             "enterprise": "Monkey Monk",
-            "description": "Actuellement je travaille chez Monkey Monk, une entreprise sociale du numérique ayant un rôle dans l'écosystème Darwin de Bordeaux. Ce boulot me permet de me familiariser avec les technologies Laravel, VueJS, Buefy, MongoDB, Docker, Wordpress (Divi) et VueX.",
-            "description_second": "Nous travaillons sur divers projets web, tels que la Conciergerie Solidaire, Sports-Village, la plateforme Miuseec...",
+            "description": "J'ai travaillé chez Monkey Monk, une entreprise sociale du numérique ayant un rôle dans l'écosystème Darwin de Bordeaux. Cela m'a permis de me familiariser avec les technologies VueJS, Laravel, MongoDB, Docker, Wordpress (Divi).",
+            "description_second": "J'ai pris part à divers projets web, tels que la Conciergerie Solidaire, Sports-Village, la plateforme Miuseec, Darwin Camp...",
             "technologies": [
                 { "name" : "VueJS" },
                 { "name" : "Laravel" },
                 { "name" : "WordPress" },
                 { "name" : "Docker" }
             ],
-            "date": "Since October 2019" 
+            "date": "October 2019 to July 2020" 
         },
         "second": {
             "enterprise": "O'clock",

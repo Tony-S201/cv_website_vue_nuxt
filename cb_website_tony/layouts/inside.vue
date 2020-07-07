@@ -8,11 +8,11 @@
           </div>
           <div class="inside-aside-menu-container">
             <ul class="inside-aside-menu-list has-text-centered">
-              <nuxt-link to="/about" @click.native="menuItemSelected = 1" class="inside-aside-menu-list-items"><li v-bind:class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
-              <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
-              <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
-              <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
-<!--               <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
+              <nuxt-link to="/about" class="inside-aside-menu-list-items"><li v-bind:class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
+              <nuxt-link to="/skills" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
+              <nuxt-link to="/projects" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
+              <nuxt-link to="/contact" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
+<!--               <nuxt-link to="/lab" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
  -->            </ul>
           </div>
           <footer class="inside-aside-footer-container">
@@ -23,7 +23,7 @@
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>
             </div>
             <div class="inside-aside-mentions-container has-text-centered">
-              <nuxt-link to="/legal-mentions" @click.native="menuItemSelected = 6"><span class="has-text-white">{{ activeLanguage == 'fr' ? 'Mentions Légales' : 'Legal Mentions' }}</span></nuxt-link>
+              <nuxt-link to="/legal-mentions"><span class="has-text-white">{{ activeLanguage == 'fr' ? 'Mentions Légales' : 'Legal Mentions' }}</span></nuxt-link>
               <p>Copyright Swierz Tony 2020</p>
             </div> 
           </footer> 
@@ -39,11 +39,11 @@
           <span></span>
           <ul class="inside-menu-burger-list">
             <div class="inside-menu-burger-list-container has-text-centered">
-              <nuxt-link to="/about" @click.native="menuItemSelected = 1" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
-              <nuxt-link to="/skills" @click.native="menuItemSelected = 2" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
-              <nuxt-link to="/projects" @click.native="menuItemSelected = 3" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
-              <nuxt-link to="/contact" @click.native="menuItemSelected = 4" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
-<!--               <nuxt-link to="/lab" @click.native="menuItemSelected = 5" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
+              <nuxt-link to="/about" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
+              <nuxt-link to="/skills" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
+              <nuxt-link to="/projects" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
+              <nuxt-link to="/contact" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
+<!--               <nuxt-link to="/lab" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
  -->            </div>
           </ul>
         </div>
@@ -110,13 +110,18 @@ export default {
     return {
       activeLanguage: this.$store.state.selectLanguage,
       langs: { en: en, fr: fr },
-      menuItemSelected: Number,
       checked: false,
     }
   },
   computed: {
     selectLanguage() {
         this.activeLanguage = this.$store.state.selectLanguage
+    },
+    menuItemSelected() {
+      if(this.$route.path == '/about'){ return 1 }
+      if(this.$route.path == '/skills'){ return 2 }
+      if(this.$route.path == '/projects'){ return 3 }
+      if(this.$route.path == '/contact'){ return 4 }
     }
   },
   methods: {
