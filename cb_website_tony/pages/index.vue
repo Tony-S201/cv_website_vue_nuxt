@@ -42,7 +42,7 @@
     </div>
 
     <div class="home-goto-container has-text-centered">
-      <b-button class="home-goto-button"><nuxt-link to="/about">Go !</nuxt-link></b-button>
+      <b-button class="home-goto-button"><nuxt-link to="/about">Go</nuxt-link></b-button>
       <div class="home-goto-icon">
         <font-awesome-icon :icon="['fas', 'hand-pointer']" aria-hidden="true"></font-awesome-icon>
       </div>

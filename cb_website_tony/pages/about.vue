@@ -82,8 +82,13 @@ import { mapState } from 'vuex'
 
 export default {
   layout: 'inside',
-  head: {
+  /* head: {
     title: 'A propos | ST'
+  }, */
+  head () {
+    return {
+      title: this.activeLanguage == 'fr' ? 'A propos | ST' : 'About | ST',
+    }
   },
   data () {
     return {

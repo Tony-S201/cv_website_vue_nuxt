@@ -9,8 +9,8 @@
     <h1 class="section-titles">Projects {{selectLanguage}}</h1>
 
     <b-field class="projects-select">
-        <b-select placeholder="Tous">
-            <option value="tous" @click="isActive = 'tous'">Tous</option>
+        <b-select :placeholder="activeLanguage == 'fr' ? 'Tous' : 'All'">
+            <option value="tous" @click="isActive = 'tous'">{{ activeLanguage == 'fr' ? 'Tous' : 'All' }}</option>
             <option value="desktop" @click="isActive = 'web'">Web</option>
             <option value="mobile" @click="isActive = 'mobile'">Mobile</option>
         </b-select>
@@ -25,7 +25,7 @@
         <li @click="changeProjectsType('tous')" :class="{ 'is-active': isActive == 'tous' }">
           <a>
             <span class="icon is-small"><font-awesome-icon :icon="['fas', 'globe']" aria-hidden="true"></font-awesome-icon></span>
-            <span>Tous</span>
+            <span>{{ activeLanguage == 'fr' ? 'Tous' : 'All' }}</span>
           </a>
         </li>
         <li @click="changeProjectsType('web')" :class="{ 'is-active': isActive == 'web' }">
@@ -140,8 +140,10 @@ import sal from 'sal.js'
 
 export default {
   layout: 'inside',
-  head: {
-    title: 'Projets | ST'
+  head () {
+    return {
+      title: this.activeLanguage == 'fr' ? 'Projets | ST' : 'Projects | ST'
+    }
   },
   data () {
     return {
@@ -186,7 +188,6 @@ export default {
   mounted () {
     // Récupère tous les projets selon la langue sélectionnée
     this.projectsDatas = this.langs[this.activeLanguage].projects
-    // this.$nuxt.$loading.finish()
     sal({
       threshold: 0,
     });

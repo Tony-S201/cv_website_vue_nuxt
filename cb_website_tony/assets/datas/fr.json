@@ -139,7 +139,10 @@
     }
 },
 "skills": {
-
+    "titles": {
+        "tools": "Outils",
+        "technologies": "Technologies"
+    }
 },
 "contact": {
     "titles" : {

@@ -6,7 +6,7 @@
         <li class="is-active"><a href="#" aria-current="page">{{ langs[activeLanguage].menu.title_skills }}</a></li>
       </ul>
     </nav>
-    <h1 class="section-titles">Compétences</h1>
+    <h1 class="section-titles">{{ langs[activeLanguage].menu.title_skills }}</h1>
 
     <div class="skills-blocks-container">
       <div class="skills-left-technologies">
@@ -14,7 +14,7 @@
           data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="600"
-          data-sal-easing="ease-out-bounce">Technologies</h2>
+          data-sal-easing="ease-out-bounce">{{ langs[activeLanguage].skills.titles.technologies }}</h2>
         <div class="skills-technologies-container has-text-centered" 
           data-sal="slide-right"
           data-sal-delay="1000"
@@ -65,7 +65,7 @@
           data-sal="fade"
           data-sal-delay="200"
           data-sal-duration="600"
-          data-sal-easing="ease-out-bounce">Outils</h2>
+          data-sal-easing="ease-out-bounce">{{ langs[activeLanguage].skills.titles.tools }}</h2>
         <div class="skills-tools-container has-text-centered" 
           data-sal="slide-left"
           data-sal-delay="1000"
@@ -125,8 +125,10 @@ import { mapState } from 'vuex'
 
 export default {
   layout: 'inside',
-  head: {
-    title: 'Technologies | ST'
+  head () {
+    return {
+      title: this.activeLanguage == 'fr' ? 'Compétences | ST' : 'Skills | ST'
+    }
   },
   data () {
     return {
@@ -138,7 +140,6 @@ export default {
   }),
   mounted () {
     sal();
-    // this.$nuxt.$loading.finish()
   }
 }
 </script>

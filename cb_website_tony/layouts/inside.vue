@@ -17,13 +17,13 @@
           </div>
           <footer class="inside-aside-footer-container">
             <div class="inside-aside-mentions-networks has-text-centered">
-              <span class="inside-aside-mentions-networks-title">MES PROFILS :</span>
+              <span class="inside-aside-mentions-networks-title">{{ activeLanguage == 'fr' ? 'MES PROFILS :' : 'MY PROFILES :' }}</span>
               <a href="https://github.com/Tony-S201" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-github-48.png"/></a>
               <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-linkedin-48.png"/></a>
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>
             </div>
             <div class="inside-aside-mentions-container has-text-centered">
-              <nuxt-link to="/legal-mentions" @click.native="menuItemSelected = 6"><span class="has-text-white">Mentions Légales</span></nuxt-link>
+              <nuxt-link to="/legal-mentions" @click.native="menuItemSelected = 6"><span class="has-text-white">{{ activeLanguage == 'fr' ? 'Mentions Légales' : 'Legal Mentions' }}</span></nuxt-link>
               <p>Copyright Swierz Tony 2020</p>
             </div> 
           </footer> 
@@ -110,7 +110,7 @@ export default {
     return {
       activeLanguage: this.$store.state.selectLanguage,
       langs: { en: en, fr: fr },
-      menuItemSelected: 1,
+      menuItemSelected: Number,
       checked: false,
     }
   },
