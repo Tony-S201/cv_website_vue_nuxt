@@ -1,6 +1,29 @@
 {
 "projects": {
     "1": {
+        "title": "Site Portfolio v2",
+        "type": "web",
+        "image": "cv2-1.JPG",
+        "details": {
+            "function": "Développeur Front-End",
+            "description": "Site personnel vitrine de mes compétences, de mon expérience, et qui permet de me contacter.",
+            "team": "Moi-meme",
+            "date": "Juillet 2020",
+            "overview": "https://www.tonyswierz.com/",
+            "linkpresent": true,
+            "link": "https://www.tonyswierz.com/"
+        },
+        "logo": "cv_logo.png",
+        "carousel": [
+            { "img" : "cv2-2.JPG" },
+            { "img" : "cv2-3.JPG" },
+            { "img" : "cv2-4.JPG" }
+        ],
+        "technologies": [
+            { "name" : "VueJS" }
+        ]
+    },
+    "2": {
         "title": "Console Conciergerie Solidaire",
         "type": "web",
         "image": "console-1.png",
@@ -23,7 +46,7 @@
             { "name" : "MongoDB" }
         ]
     },
-    "2": {
+    "3": {
         "title": "Darwin Camp",
         "type": "web",
         "image": "darwin-1.JPG",
@@ -44,7 +67,7 @@
             { "name" : "WordPress" }
         ]
     },
-    "3": {
+    "4": {
         "title": "Miuseec",
         "type": "web",
         "image": "miuseec-1.png",
@@ -65,7 +88,7 @@
             { "name" : "Twig" }
         ]
     },
-    "4": {
+    "5": {
         "title": "Font Tester",
         "type": "web",
         "image": "font_tester.jpg",
@@ -87,7 +110,7 @@
             { "name" : "Css" }
         ]
     },
-    "5": {
+    "6": {
         "title": "Markdown Editor",
         "type": "web",
         "image": "markdown_editor.jpg",
@@ -109,7 +132,7 @@
             { "name" : "Sass" }
         ]
     },
-    "6": {
+    "7": {
         "title": "Site Portfolio v1",
         "type": "web",
         "image": "cv-1.jpg",
@@ -134,7 +157,7 @@
             { "name" : "XML" }
         ]
     },
-    "7": {
+    "8": {
         "title": "The FAT Bastard GangBang",
         "type": "web",
         "image": "fat-1.jpg",
