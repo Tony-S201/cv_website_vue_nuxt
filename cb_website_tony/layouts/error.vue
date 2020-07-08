@@ -1,11 +1,14 @@
 <template>
-  <div class="container">
-    <div v-if="error.statusCode === 404">
-        <h1>Oops...</h1>
-        <h1>Page not found !</h1>
+  <div class="error-container">
+    <div class="error-text has-text-centered has-text-white" v-if="error.statusCode === 404">
+      <h1 class="has-text-weight-bold is-size-1">Oops...</h1>
+      <h1 v-if="error.statusCode !== 404">An error occurred</h1>
+      <h1 v-if="error.statusCode === 404" class="is-uppercase has-text-weight-bold">Page not found !</h1>
+      <img :src="require(`../assets/img/error.png`)" alt="Placeholder image">
     </div>
-    <h1 v-else>An error occurred</h1>
-    <nuxt-link to="/"><button class="button" type="button">Home page</button></nuxt-link>
+    <div class="error-button has-text-centered">
+      <nuxt-link to="/"><b-button class="button is-info has-text-weight-bold is-uppercase" type="button">BACK TO HOME</b-button></nuxt-link>
+    </div>
   </div>
 </template>
 

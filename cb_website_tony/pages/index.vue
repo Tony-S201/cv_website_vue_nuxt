@@ -6,12 +6,13 @@
       <div class='console-underscore' id='console'>&#95;</div>
     </div>
     <div class="home-goto-container has-text-centered">
-      <nuxt-link to="/about"><button class="home-goto-button is-size-4 has-text-weight-bold has-text-white">Go</button></nuxt-link>
+      <nuxt-link to="/about"><button class="home-goto-button is-size-4 has-text-weight-bold has-text-white"><h2>Go</h2></button></nuxt-link>
 <!--       <div class="home-goto-icon">
         <font-awesome-icon :icon="['fas', 'hand-pointer']" aria-hidden="true"></font-awesome-icon>
       </div> -->
     </div>
     <div class="home-clip-down"></div>
+    <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
   </section>
 </template>
 
@@ -27,7 +28,13 @@ export default {
       { hid: 'description', name: 'description', content: 'Tony Swierz, développeur web de Bordeaux. Venez découvrir mon site portfolio.'}
     ],
   },
+  data () {
+    return {
+      isLoading: true,
+    }
+  },
   mounted () {
+    this.isLoading = false
     if (process.browser) {
       require('~/assets/js/title.js')
     }

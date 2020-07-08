@@ -43,6 +43,9 @@
           data-sal-delay="200"
           data-sal-duration="800">{{ langs[activeLanguage].about.experience.title }}</h2>
         <b-steps class="about-steps-container" 
+          data-sal="slide-left"
+          data-sal-delay="800"
+          data-sal-duration="1000"
           :label-position="labelPosition"
           vertical >
           <b-step-item class="about-steps-first" :label="this.langs[this.activeLanguage].about.experience.first.date + ' - ' + this.langs[this.activeLanguage].about.experience.first.enterprise" icon="" :clickable="clickable" >
