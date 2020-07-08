@@ -163,19 +163,20 @@
         "title": "Informations",
         "aboutperson": {
             "title": "About",
-            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End."
+            "text": "Interested in the possibilities of the IT domain, my professional choice fell naturally on web development, with a preference for the Front-End. My goal is to continue to develop skills in modern and efficient technologies, especially VueJS and Laravel. I also remain curious about the marketing and project management aspect of the web."
         },
-        "hobbies": {
-            "title": "Hobbies",
-            "text": "Blablabla"
+        "degree": {
+            "title": "Degrees",
+            "text_first": "• BTEC Higher National Diploma for Web & App Development - Level 5",
+            "text_second": "• Opquast® certificate: Quality control in Web project - Confirmed level"
         }
     },
     "experience": {
         "title": "Experience",
         "first": {
             "enterprise": "Monkey Monk",
-            "description": "J'ai travaillé chez Monkey Monk, une entreprise sociale du numérique ayant un rôle dans l'écosystème Darwin de Bordeaux. Cela m'a permis de me familiariser avec les technologies VueJS, Laravel, MongoDB, Docker, Wordpress (Divi).",
-            "description_second": "J'ai pris part à divers projets web, tels que la Conciergerie Solidaire, Sports-Village, la plateforme Miuseec, Darwin Camp...",
+            "description": "I worked at Monkey Monk, a digital social enterprise with a role in the Darwin ecosystem of Bordeaux. This allowed me to familiarize myself with VueJS, Laravel, MongoDB, Docker, Wordpress (Divi) technologies.",
+            "description_second": "I took part in various web projects, such as the Conciergerie Solidaire, Sports-Village, the Miuseec platform, Darwin Camp ...",
             "technologies": [
                 { "name" : "VueJS" },
                 { "name" : "Laravel" },
@@ -186,17 +187,17 @@
         },
         "second": {
             "enterprise": "O'clock",
-            "description": "Ecole innovante qui forme au métier de Développeur Web, format télé-présentiel permettant de travailler à distance tout en conservant une proximité avec les étudiants / enseignants.",
-            "description_second": "J'y ai réalisé 400h intensives chez O'Clock (formation 100% téléprésentielle) afin d'apprendre les langages HTML, CSS, PHP, JavaScript. Mais aussi : SASS JEST (Tests unitaires) Linux, Git, Gitflow BDD, SQL, POO, MVC BootStrap Ajax API REST Gestion de projet (cahier des charges, spec fonctionnelles, MLD, MCD, Wireframes) Méthodes agiles (SCRUM)",
-            "description_third": "Ainsi que deux mois de spécialisation ReactJS (300h), dont un mois de projet FullStack en équipe de deux développeurs WordPress et deux développeurs React, me permettant d'être mis face à des problèmatiques réelles.",
+            "description": "Innovative school which trains in the profession of Web Developer, tele-face-to-face format allowing to work remotely while maintaining proximity with students / teachers.",
+            "description_second": "I realized 400h intensive at O'Clock (100% telepresential training) in order to learn HTML, CSS, PHP, JavaScript languages. But also: SASS JEST (Unit Testing) Linux, Git, Gitflow BDD, SQL, POO, MVC BootStrap Ajax API REST Project management (specifications, functional spec, MLD, MCD, Wireframes) Agile methods (SCRUM).",
+            "description_third": "As well as two months of ReactJS specialization (300h), including a month of FullStack project in a team of two WordPress developers and two React developers, allowing me to be confronted with real problems.",
             "technologies": [
                 { "name" : "PHP" },
                 { "name" : "JavaScript" },
                 { "name" : "Sass" },
-                { "name" : "JEST (Tests Unitaires)"},
+                { "name" : "JEST (Unit Testing)"},
                 { "name" : "ReactJS" },
-                { "name" : "Conception (Wireframes, MCD, MLD, cahier des charges)" },
-                { "name" : "Gestion de projet (Méthodes agiles)" }
+                { "name" : "Conception (Wireframes, MCD, MLD, functional specifications)" },
+                { "name" : "Gestion de projet (Agile Software Development)" }
             ],
             "date": "October 2018 to June 2020"
         }

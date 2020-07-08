@@ -16,7 +16,7 @@
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-administrateur-homme-100.png"/>{{ langs[activeLanguage].about.text.aboutperson.title }}</h2>
+          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-utilisateur-masculin.svg"/>{{ langs[activeLanguage].about.text.aboutperson.title }}</h2>
           
         <p
           data-sal="slide-left"
@@ -27,12 +27,15 @@
         <h2 class="subtitle about-titles has-text-weight-bold"
           data-sal="fade"
           data-sal-delay="200"
-          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-masque-tuba-100.png"/>{{ langs[activeLanguage].about.text.hobbies.title }}</h2>
+          data-sal-duration="800"><img class="icon is-large about-title-pictures" src="~/assets/img/about-icons/icons8-document.svg"/>{{ langs[activeLanguage].about.text.degree.title }}</h2>
         <p
           data-sal="slide-left"
           data-sal-delay="800"
-          data-sal-duration="1000">{{ langs[activeLanguage].about.text.hobbies.text }}</p>
-
+          data-sal-duration="1000">{{ langs[activeLanguage].about.text.degree.text_first }}</p>
+        <p
+        data-sal="slide-left"
+        data-sal-delay="800"
+        data-sal-duration="1000">{{ langs[activeLanguage].about.text.degree.text_second }}</p>
       </div>
       <div class="about-steps">
         <h2 class="subtitles-group is-size-4 has-text-weight-bold has-text-centered"
@@ -82,9 +85,6 @@ import { mapState } from 'vuex'
 
 export default {
   layout: 'inside',
-  /* head: {
-    title: 'A propos | ST'
-  }, */
   head () {
     return {
       title: this.activeLanguage == 'fr' ? 'A propos | ST' : 'About | ST',

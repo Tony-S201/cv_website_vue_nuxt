@@ -164,11 +164,12 @@
         "title": "Informations",
         "aboutperson": {
             "title": "A propos",
-            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End."
+            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End. J'ai pour objectif de continuer à monter en compétences dans des technologies modernes et efficaces, notamment VueJS et Laravel. Je reste également curieux de l'aspect marketing et gestion de projet du web."
         },
-        "hobbies": {
-            "title": "Hobbies",
-            "text": "Blablabla"
+        "degree": {
+            "title": "Diplômes",
+            "text_first": "• Titre de Développeur Web et Web Mobile, RNCP Niveau III Bac +2/3",
+            "text_second": "• Certificat Opquast® : Maîtrise de la qualité en projet Web - Niveau Confirmé"
         }
     },
     "experience": {
