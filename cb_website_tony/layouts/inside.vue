@@ -33,16 +33,16 @@
         </div>
 
         <div class="inside-menu-burger">
-          <input type="checkbox" v-model="checked"/>    
+          <input class="has-text-white" type="checkbox" v-model="checked"/>    
           <span></span>
           <span></span>
           <span></span>
           <ul class="inside-menu-burger-list">
             <div class="inside-menu-burger-list-container has-text-centered">
-              <nuxt-link to="/about" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link>
-              <nuxt-link to="/skills" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link>
-              <nuxt-link to="/projects" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
-              <nuxt-link to="/contact" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
+              <button @click="checked = false" class="inside-menu-burger-button"><nuxt-link to="/about" class="inside-aside-menu-list-items has-text-black has-text-weight-bold"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 1 }">{{ langs[activeLanguage].menu.title_about }}</li></nuxt-link></button>
+              <button @click="checked = false" class="inside-menu-burger-button"><nuxt-link to="/skills" class="inside-aside-menu-list-items has-text-black has-text-weight-bold"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 2 }">{{ langs[activeLanguage].menu.title_skills }}</li></nuxt-link></button>
+              <button @click="checked = false" class="inside-menu-burger-button"><nuxt-link to="/projects" class="inside-aside-menu-list-items has-text-black has-text-weight-bold"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link></button>
+              <button @click="checked = false" class="inside-menu-burger-button"><nuxt-link to="/contact" class="inside-aside-menu-list-items has-text-black has-text-weight-bold"><li :class="{ 'inside-aside-menu-selected': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link></button>
 <!--               <nuxt-link to="/lab" class="inside-aside-menu-list-items has-text-black"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
  -->            </div>
           </ul>
@@ -127,12 +127,11 @@ export default {
   methods: {
     // Function to test custom loading
     goTo(location) {
-      this.checked = false
       this.$nuxt.$loading.start()
       setTimeout(() => {
         this.$router.push('/' + location)
       }, 1000)
-    }
+    },
   },
 }
 </script>

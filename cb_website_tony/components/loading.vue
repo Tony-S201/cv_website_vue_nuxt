@@ -3,7 +3,7 @@
     <div class="loadingio-spinner-bean-eater-7x4ie975iwv"><div class="ldio-jb3kv2euomp">
     <div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
     </div></div>
-    <h1 class="loading-title" data-text="Chargement…">Chargement…</h1>
+    <h1 class="loading-title" data-text="Loading…">Loading…</h1>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     },
     finish () {
       this.loading = false
-    }
+    },
   }
 }
 </script>

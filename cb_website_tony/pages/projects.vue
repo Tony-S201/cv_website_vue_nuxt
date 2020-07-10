@@ -10,9 +10,9 @@
 
     <b-field class="projects-select">
         <b-select :placeholder="activeLanguage == 'fr' ? 'Tous' : 'All'">
-            <option value="tous" @click="isActive = 'tous'">{{ activeLanguage == 'fr' ? 'Tous' : 'All' }}</option>
-            <option value="desktop" @click="isActive = 'web'">Web</option>
-            <option value="mobile" @click="isActive = 'mobile'">Mobile</option>
+            <option value="tous" @click="changeProjectsType('tous')">{{ activeLanguage == 'fr' ? 'Tous' : 'All' }}</option>
+            <option value="desktop" @click="changeProjectsType('web')">Web</option>
+            <option value="mobile" @click="changeProjectsType('mobile')">Mobile</option>
         </b-select>
     </b-field>
 

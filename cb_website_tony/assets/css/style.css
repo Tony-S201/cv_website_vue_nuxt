@@ -178,7 +178,7 @@
 .inside-menu-burger input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #fff;
 }
 .inside-menu-burger input:checked ~ span:nth-last-child(3) {
   opacity: 0;
@@ -187,13 +187,19 @@
 .inside-menu-burger input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
+.inside-menu-burger-button {
+    background-image: linear-gradient(to top, #91d155, #7ad16d, #66d183, #55cf96, #4bcca7);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
 .inside-menu-burger-list {
+  background-image: url(/_nuxt/assets/img/home_background_forest.jpg);
   position: absolute;
   width: 100vw;
   height: 110vh;
   margin: -100px 0 0 -50px;
   padding-top: 100px;
-  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -216,9 +222,7 @@
     justify-content: space-evenly;
     -webkit-justify-content: space-evenly;
 }
-.inside-menu-burger-list li {
-  font-size: 2em;
-}
+
 .inside-menu-burger input:checked ~ ul {
   transform: none;
 }
@@ -228,6 +232,9 @@
 
 .inside-menu {
     display: none;
+}
+.inside-select-language {
+    z-index: 2;
 }
 .inside-select-language button {
     border: 0;
@@ -293,7 +300,7 @@
     -webkit-flex-direction: column;
     bottom: 10px;
     right: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .inside-tablet-block {
@@ -353,6 +360,9 @@ main {
     display: -webkit-flex;
     justify-content: space-between;
     -webkit-justify-content: space-between;
+}
+.projects-select .select {
+    z-index: 1;
 }
 
 /* Hauteur du modal */
@@ -425,6 +435,9 @@ main {
 }
 .contact-map {
     height: 400px;
+}
+.contact-form-label {
+    z-index: 1;
 }
 
 .legalmentions-container {

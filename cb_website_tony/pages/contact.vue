@@ -16,30 +16,36 @@
           data-sal-duration="800">{{ langs[activeLanguage].contact.titles.form }}</h2>
 
         <form class="contact-form" @submit.prevent="sendEmail">
-          <b-field data-sal="slide-up"
+          <b-field 
+            class="contact-form-label"
+            data-sal="slide-up"
             data-sal-delay="800"
             data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.subject" label-position="on-border">
             <b-input user-scalable="no" 
-                    name="subject" 
-                    maxlength="50"
-                    v-model="form.subject"
-                    expanded
-                    >
+              name="subject" 
+              maxlength="50"
+              v-model="form.subject"
+              expanded
+              >
             </b-input>
           </b-field>
 
-          <b-field data-sal="slide-up"
+          <b-field
+            class="contact-form-label" 
+            data-sal="slide-up"
             data-sal-delay="800"
             data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.name" label-position="on-border">
-              <b-input
-                name="user_name"
-                maxlength="30"
-                v-model="form.name"
-                >
-              </b-input>
+            <b-input
+              name="user_name"
+              maxlength="30"
+              v-model="form.name"
+              >
+            </b-input>
           </b-field>
 
-          <b-field data-sal="slide-up"
+          <b-field
+            class="contact-form-label" 
+            data-sal="slide-up"
             data-sal-delay="800"
             data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.email" label-position="on-border">
               <b-input type="email"
@@ -50,7 +56,9 @@
               </b-input>
           </b-field>
 
-          <b-field data-sal="slide-up"
+          <b-field 
+            class="contact-form-label"
+            data-sal="slide-up"
             data-sal-delay="800"
             data-sal-duration="1000" :label="langs[activeLanguage].contact.formdetails.message" label-position="on-border">
             <b-input name="message" user-scalable="no" v-model="form.message" type="textarea" maxlength="8000" required></b-input>
