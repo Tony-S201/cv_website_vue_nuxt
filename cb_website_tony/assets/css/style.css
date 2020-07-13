@@ -194,7 +194,7 @@
     padding: 10px;
 }
 .inside-menu-burger-list {
-  background-image: url(/_nuxt/assets/img/home_background_forest.jpg);
+  background-image: url('../img/home_background_forest.jpg');
   position: absolute;
   width: 100vw;
   height: 110vh;
