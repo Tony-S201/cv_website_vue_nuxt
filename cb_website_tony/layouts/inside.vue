@@ -13,7 +13,8 @@
               <nuxt-link to="/projects" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 3 }">{{ langs[activeLanguage].menu.title_projects }}</li></nuxt-link>
               <nuxt-link to="/contact" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-green': menuItemSelected == 4 }">{{ langs[activeLanguage].menu.title_contact }}</li></nuxt-link>
 <!--               <nuxt-link to="/lab" class="inside-aside-menu-list-items"><li :class="{ 'inside-aside-menu-selected-blue': menuItemSelected == 5 }">{{ langs[activeLanguage].menu.title_lab }}</li></nuxt-link>
- -->            </ul>
+ -->
+            </ul>
           </div>
           <footer class="inside-aside-footer-container">
             <div class="inside-aside-mentions-networks has-text-centered">
@@ -21,11 +22,14 @@
               <a href="https://github.com/Tony-S201" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-github-48.png"/></a>
               <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-linkedin-48.png"/></a>
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>
+              <div>
+                <a href="http://myreader.toile-libre.org/uploads/My_5f21a48564882.pdf" target="_blank" class="button is-light has-text-weight-bold">{{ activeLanguage == 'fr' ? 'Voir CV' : 'See CV' }}</a>
+              </div>
             </div>
             <div class="inside-aside-mentions-container has-text-centered">
               <nuxt-link to="/legal-mentions"><span class="has-text-white">{{ activeLanguage == 'fr' ? 'Mentions Légales' : 'Legal Mentions' }}</span></nuxt-link>
               <p>Copyright Swierz Tony 2020</p>
-            </div> 
+            </div>
           </footer> 
         </aside>
 
@@ -93,7 +97,6 @@
         <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img src="~/assets/img/icons8-linkedin-48.png"/></a>
         <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img src="~/assets/img/icons8-stack-overflow-48.png"/></a>
       </div>
-
       <main>
         <Nuxt/>
       </main>
