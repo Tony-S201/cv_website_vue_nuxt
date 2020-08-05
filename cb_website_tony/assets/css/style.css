@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .home-layout-container {
     height: 100vh;
     background-image: url('../img/home_background_forest.jpg');
-		background-size: cover;
-		-webkit-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -310,6 +316,10 @@
     display: none;
 }
 
+.inside-aside-mentions-container-copyright {
+    color: #696969;
+}
+
 main {
     height: 100%;
 }
@@ -608,6 +618,12 @@ main {
         color: #fff;
         margin-bottom: 5%;
     }
+    .inside-aside-menu-list-items:hover {
+        display: block;
+        font-size: 1.7em;
+        color: #696969;
+        margin-bottom: 5%;
+    }
     .inside-aside-menu-selected-blue {
         color: #4BCCA7;
     }
@@ -617,9 +633,30 @@ main {
     .inside-aside-mentions-container {
         width: 100%;
     }
+    .inside-aside-mentions-download {
+        background-color: #696969;
+        padding: 6px;
+        border-radius: 15px;
+    }
+    .inside-aside-mentions-download-container {
+        margin-top: 10px;
+        -webkit-transition: 0.70s;
+        -moz-transition: 0.70s;
+        -ms-transition: 0.70s;
+        -o-transition: 0.70s;
+        transition: 0.70s;
+    }
+    .inside-aside-mentions-download-container:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
     .inside-aside-mentions-networks-title {
         display: block;
         padding-bottom: 10px;
+        color: #696969;
     }
     .inside-aside-mentions-pictures {
         width: 32px;
@@ -641,6 +678,25 @@ main {
         -o-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
+    }
+    .inside-aside-mentions-pictures-heart {
+        width: 24px;
+        height: 24px;
+        margin: 0 4px;
+        animation: heartzoom 1.5s alternate infinite ease-in;
+    }
+    @keyframes heartzoom {
+        0% {transform: scale(0.8)}
+        100% {transform: scale(1.2)}
+    }
+    .inside-aside-mentions-make {
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flexbox;
+        align-content: center;
+        -webkit-align-content: center;
+        justify-content: center;
+        -webkit-justify-content: center;
     }
     .inside-aside-footer-container {
         height: 30vh;

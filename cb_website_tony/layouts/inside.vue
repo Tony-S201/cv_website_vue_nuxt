@@ -18,17 +18,17 @@
           </div>
           <footer class="inside-aside-footer-container">
             <div class="inside-aside-mentions-networks has-text-centered">
-              <span class="inside-aside-mentions-networks-title">{{ activeLanguage == 'fr' ? 'MES PROFILS :' : 'MY PROFILES :' }}</span>
               <a href="https://github.com/Tony-S201" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-github-48.png"/></a>
               <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-linkedin-48.png"/></a>
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>
-              <div>
-                <a href="http://myreader.toile-libre.org/uploads/My_5f21a48564882.pdf" target="_blank" class="button is-light has-text-weight-bold">{{ activeLanguage == 'fr' ? 'Voir CV' : 'See CV' }}</a>
+              <div class="inside-aside-mentions-download-container">
+                <a href="http://myreader.toile-libre.org/uploads/My_5f21a48564882.pdf" target="_blank" class="inside-aside-mentions-download has-text-white has-text-weight-bold">{{ activeLanguage == 'fr' ? 'Voir mon CV' : 'See my CV' }}</a>
               </div>
             </div>
             <div class="inside-aside-mentions-container has-text-centered">
-              <nuxt-link to="/legal-mentions"><span class="has-text-white">{{ activeLanguage == 'fr' ? 'Mentions Légales' : 'Legal Mentions' }}</span></nuxt-link>
-              <p>Copyright Swierz Tony 2020</p>
+              <!-- <nuxt-link to="/legal-mentions"><span class="has-text-white">{{ activeLanguage == 'fr' ? 'Mentions Légales' : 'Legal Mentions' }}</span></nuxt-link> -->
+              <div class="inside-aside-mentions-make has-text-white">MAKE WITH <img class="inside-aside-mentions-pictures-heart" src="~/assets/img/icons8-coeurs-48.png"/> BY</div>
+              <img class="" src="~/assets/img/name.png"/>
             </div>
           </footer> 
         </aside>
