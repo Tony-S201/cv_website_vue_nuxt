@@ -1,24 +1,20 @@
 <template>
   <section class="home-layout-container">
-      <h1 class="ml15">
-        <div>
-          <span class="word">swierz</span>
-          <span class="word">tony</span>
-        </div>
-        <div>
-          <span class="word">web</span>
-          <span class="word">developer</span>
-        </div>
-      </h1>
+    <div v-if="launch && !this.$store.state.alreadySeeHome" class="ml15">
       <div>
-        <nuxt-link to="/about"><button class="home-goto-button is-size-4 has-text-weight-bold has-text-white"><h2>Go</h2></button></nuxt-link>
+        <span class="word">swierz</span>
+        <span class="word">tony</span>
       </div>
+      <div>
+        <span class="word">web</span>
+        <span class="word">developer</span>
+      </div>
+    </div>
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
   </section>
 </template>
 
 <script>
-
 
 export default {
   layout: 'first',
@@ -35,7 +31,11 @@ export default {
     return {
       isLoading: true,
       isFullPage: true,
+      launch: false,
     }
+  },
+  beforeMount() {
+    this.launch = true
   },
   mounted () {
     this.isLoading = false
