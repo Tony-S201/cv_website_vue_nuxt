@@ -4,5 +4,9 @@ export default {
   },
   switchToEn (state) {
       state.selectLanguage = 'en'
+  },
+  switchSeeTrue (state) {
+    state.alreadySeeHome = true
   }
+
 }

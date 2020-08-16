@@ -1,3 +1,4 @@
 export default () => ({
-    selectLanguage: 'fr'
+    selectLanguage: 'fr',
+    alreadySeeHome: false,
   })
