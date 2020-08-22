@@ -22,7 +22,7 @@
               <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-linkedin-48.png"/></a>
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>
               <div class="inside-aside-mentions-download-container">
-                <a href="http://myreader.toile-libre.org/uploads/My_5f21a48564882.pdf" target="_blank" class="inside-aside-mentions-download has-text-white has-text-weight-bold">{{ activeLanguage == 'fr' ? 'Voir mon CV' : 'See my CV' }}</a>
+                <a href="http://myreader.toile-libre.org/uploads/My_5f40ff405213d.pdf" target="_blank" class="inside-aside-mentions-download has-text-white has-text-weight-bold">{{ activeLanguage == 'fr' ? 'Voir mon CV' : 'See my CV' }}</a>
               </div>
             </div>
             <div class="inside-aside-mentions-container has-text-centered">

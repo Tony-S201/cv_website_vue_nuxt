@@ -6,7 +6,7 @@
         <li class="is-active"><a href="#" aria-current="page">{{ langs[activeLanguage].menu.title_about }}</a></li>
       </ul>
     </nav>
-    <h1 class="section-titles">About</h1>
+    <h1 class="section-titles">{{ langs[activeLanguage].menu.title_about }}</h1>
     <div class="about-subcontainer">
       <div class="about-text">
         <h2 class="subtitles-group is-size-4 has-text-weight-bold has-text-centered"
