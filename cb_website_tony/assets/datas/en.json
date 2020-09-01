@@ -1,6 +1,6 @@
 {"projects": {
     "1": {
-        "title": "A venir",
+        "title": "Work in progress",
         "type": "web",
         "image": "sf-1.jpg",
         "details": {
@@ -12,7 +12,7 @@
             "linkpresent": false,
             "link": ""
         },
-        "logo": "cv_logo.png",
+        "logo": "icons8-building-construction-96.png",
         "carousel": [
             { "img" : "sf-1.jpg" }
         ],
