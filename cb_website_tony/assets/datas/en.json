@@ -4,10 +4,10 @@
         "type": "web",
         "image": "sf-1.jpg",
         "details": {
-            "function": "Développeur FullStack",
-            "description": "Site collaboratif qui répertorie les spécialités culinaires de la France",
-            "team": "Moi-meme",
-            "date": "Août 2020",
+            "function": "Full-Stack Developer",
+            "description": "Collaborative website that lists the culinary specialties of France",
+            "team": "Myself",
+            "date": "August 2020",
             "overview": "",
             "linkpresent": false,
             "link": ""
@@ -22,7 +22,8 @@
             { "name" : "Vuetify" },
             { "name" : "JWT" },
             { "name" : "Vue-Router" },
-            { "name" : "Vue-Auth" }
+            { "name" : "Vue-Auth" },
+            { "name" : "Babel" }
         ]
     },
     "2": {
@@ -212,7 +213,7 @@
         "title": "Informations",
         "aboutperson": {
             "title": "About",
-            "text": "Interested in the possibilities of the IT domain, my professional choice fell naturally on web development, with a preference for the Front-End. My goal is to continue to develop skills in modern and efficient technologies, especially VueJS and Laravel. I also remain curious about the marketing and project management aspect of the web."
+            "text": "Interested in the possibilities of the IT domain, my professional choice fell naturally on web development, with a preference for the Front-End. My goal is to continue to develop skills in modern and efficient technologies (for example VueJS Laravel and ReactJS). I also have an interest in UX/UI Design and Adobe Illustrator, subjects on which I plan to train myself. Sensitive to certain causes, I would like to be able to get a position that makes sense in a human company. "
         },
         "degree": {
             "title": "Degrees",

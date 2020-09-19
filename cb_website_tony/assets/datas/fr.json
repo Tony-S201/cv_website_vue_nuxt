@@ -23,7 +23,8 @@
             { "name" : "Vuetify" },
             { "name" : "JWT" },
             { "name" : "Vue-Router" },
-            { "name" : "Vue-Auth" }
+            { "name" : "Vue-Auth" },
+            { "name" : "Babel" }
         ]
     },
     "2": {
@@ -213,7 +214,7 @@
         "title": "Informations",
         "aboutperson": {
             "title": "A propos",
-            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End. J'ai pour objectif de continuer à monter en compétences dans des technologies modernes et efficaces, notamment VueJS et Laravel. Je reste également curieux de l'aspect marketing et gestion de projet du web."
+            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End. J'ai pour objectif de continuer à monter en compétences dans des technologies modernes et efficaces (par exemple VueJS, Laravel, ReactJS), je porte également un intérêt pour l'UX/UI Design et Adobe Illustrator sujets sur lesquels j'ai pour projet de m'auto-former. Sensible à certaines causes, j'aimerais pouvoir obtenir un poste qui a du sens dans une entreprise humaine."
         },
         "degree": {
             "title": "Diplômes",

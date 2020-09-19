@@ -222,6 +222,10 @@ body {
     margin-right: 8px;
 }
 
+.inside-timefortheplanet {
+    display: none;
+}
+
 /* ----------------------------- */
 /* Sections */
 .about-container, 
@@ -506,7 +510,7 @@ main {
 	}
 	.projects-select {
 		display: none;
-	}
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -764,6 +768,14 @@ main {
     }
     .about-steps {
         padding-left: 2.5%;
+    }
+    .inside-timefortheplanet {
+        display: flex;
+        z-index: 2;
+        position: fixed;
+        right: 45px;
+        bottom: 35px;
+        cursor: pointer;
     }
 }
 /* Extra large devices (large desktops, 1200px and up) */

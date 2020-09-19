@@ -6,7 +6,8 @@
         <li class="is-active"><a href="#" aria-current="page">{{ langs[activeLanguage].menu.title_projects }}</a></li>
       </ul>
     </nav>
-    <h1 class="section-titles">Projects {{selectLanguage}}</h1>
+    <h1 class="section-titles">{{ langs[activeLanguage].menu.title_projects }}</h1>
+    <span>{{ selectLanguage }}</span>
 
     <b-field class="projects-select">
         <b-select :placeholder="activeLanguage == 'fr' ? 'Tous' : 'All'">
@@ -78,7 +79,7 @@
 
       </article>
 
-        <b-modal v-if="currentItem !== undefined" :active.sync="isCardModalActive" :width="640" scroll="keep">
+        <b-modal v-if="currentItem !== undefined" :active.sync="isCardModalActive" :width="640">
             <div class="card">
                 <div class="card-image">
                   <b-carousel
@@ -183,7 +184,7 @@ export default {
         this.activeLanguage = this.$store.state.selectLanguage
         this.projectsDatas = this.langs[this.activeLanguage].projects
         this.isActive = 'tous'
-    }
+    },
   },
   mounted () {
     // Récupère tous les projets selon la langue sélectionnée
