@@ -5,7 +5,4 @@ export default {
     switchToEn (context) {
       context.commit('switchToEn')
     },
-    switchSeeTrue (context) {
-      context.commit('switchSeeTrue')
-    }
   }

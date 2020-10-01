@@ -1,13 +1,22 @@
 <template>
   <section class="home-layout-container">
-    <div v-if="launch && !this.$store.state.alreadySeeHome" class="ml15">
-      <div>
-        <span class="word">swierz</span>
-        <span class="word">tony</span>
+    <div class="home-text-container">
+      <div class="home-left">
+        <div class="home-left-title is-uppercase is-size-3-mobile is-size-2-tablet is-size-1-desktop">
+          <p>Swierz Tony</p>
+          <p>WEB DEVELOPER</p>
+          <p>DEVELOPPEUR WEB</p>
+        </div>
+        <div class="home-left-description is-size-4-mobile is-size-3-tablet is-size-2-desktop">
+          <p>Welcome to my website</p>
+          <p>Bienvenue sur mon site</p>
+        </div>
+        <div class="home-left-button-container">
+          <button class="is-uppercase home-left-button is-size-6-mobile is-size-5-tablet" @click="goToWebsite()">Let's go <br> C'est parti</button>
+        </div>
       </div>
-      <div>
-        <span class="word">web</span>
-        <span class="word">developer</span>
+      <div class="home-right">
+        <img src="~/assets/img/landing-page/undraw_researching_22gp.svg" />
       </div>
     </div>
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
@@ -31,25 +40,15 @@ export default {
     return {
       isLoading: true,
       isFullPage: true,
-      launch: false,
     }
   },
-  beforeMount() {
-    this.launch = true
+  methods: {
+    goToWebsite() {
+      this.$router.push('/about')
+    }
   },
   mounted () {
     this.isLoading = false
-    if (process.browser) {
-      require('~/assets/js/title.js')
-    }
-    if (this.$store.state.alreadySeeHome != true) {
-      setTimeout(function () { 
-        this.$store.dispatch('switchSeeTrue');
-        this.$router.push('/about'); 
-      }.bind(this), 5000)
-    } else {
-      this.$router.push('/about');
-    }
   }
 }
 </script>
