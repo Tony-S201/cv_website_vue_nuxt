@@ -70,8 +70,6 @@ body {
     100%{ bottom: 10vh; }
   }
 
-
-
 .inside-layout-container {
     height: 100vh;
 }
@@ -524,6 +522,7 @@ main {
     .home-left {
         text-align: left;
         padding: 7%;
+        width: 50%;
         align-items: flex-start;
         -webkit-align-items: flex-start;
         flex-direction: column;
@@ -533,14 +532,17 @@ main {
     }
     .home-right {
         display: block;
-        padding: 8%;
         display: flex;
         display: -ms-flexbox;
         display: -webkit-flex;
+        width: 50%;
         justify-content: center;
         -webkit-justify-content: center;
         align-items: center;
         -webkit-align-items: center;
+    }
+    .home-right-image {
+        width: 90%;
     }
     .inside-menu {
         display: block;
@@ -821,5 +823,8 @@ main {
     }
     .inside-divider {
         margin-left: 300px;
+    }
+    .home-right-image {
+        width: 70%;
     }
 }
