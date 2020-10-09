@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="home-right">
-        <img src="~/assets/img/landing-page/undraw_researching_22gp.svg" />
+        <img class="home-right-image" alt="A laravel vuejs developer" src="~/assets/img/undraw_laravel_and_vue_59tp.svg" />
       </div>
     </div>
     <b-loading :is-full-page="isFullPage" :active.sync="isLoading" :can-cancel="true"></b-loading>
