@@ -1,21 +1,24 @@
 {
 "projects": {
     "1": {
-        "title": "En construction",
+        "title": "Saveurs-France",
         "type": "web",
         "image": "sf-1.jpg",
         "details": {
             "function": "Développeur FullStack",
-            "description": "Site collaboratif qui répertorie les spécialités culinaires de la France",
+            "description": "Site collaboratif qui répertorie les spécialités culinaires de la France.",
             "team": "Moi-meme",
             "date": "Août 2020",
             "overview": "",
-            "linkpresent": false,
-            "link": ""
+            "linkpresent": true,
+            "link": "https://www.saveurs-france.tonyswierz.com"
         },
         "logo": "icons8-building-construction-96.png",
         "carousel": [
-            { "img" : "sf-1.jpg" }
+            { "img" : "sf-1.jpg" },
+            { "img" : "sf-2.jpg" },
+            { "img" : "sf-3.jpg" },
+            { "img" : "sf-4.jpg" }
         ],
         "technologies": [
             { "name" : "VueJS" },

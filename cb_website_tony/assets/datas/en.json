@@ -1,20 +1,23 @@
 {"projects": {
     "1": {
-        "title": "Work in progress",
+        "title": "Saveurs-France",
         "type": "web",
         "image": "sf-1.jpg",
         "details": {
             "function": "Full-Stack Developer",
-            "description": "Collaborative website that lists the culinary specialties of France",
+            "description": "Collaborative website that lists the culinary specialties of France.",
             "team": "Myself",
             "date": "August 2020",
             "overview": "",
-            "linkpresent": false,
-            "link": ""
+            "linkpresent": true,
+            "link": "https://www.saveurs-france.tonyswierz.com"
         },
         "logo": "icons8-building-construction-96.png",
         "carousel": [
-            { "img" : "sf-1.jpg" }
+            { "img" : "sf-1.jpg" },
+            { "img" : "sf-2.jpg" },
+            { "img" : "sf-3.jpg" },
+            { "img" : "sf-4.jpg" }
         ],
         "technologies": [
             { "name" : "VueJS" },

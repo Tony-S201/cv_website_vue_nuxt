@@ -122,7 +122,7 @@
                         </p>
                         <div class="projects-modal-row-datelink">
                           <small>{{ currentItem.details.date }}</small>
-                          <a v-if="currentItem.details.linkpresent" :href="currentItem.details.link" target="_blank"><font-awesome-icon :icon="['fas', 'external-link-alt']" aria-hidden="true"></font-awesome-icon></a>
+                          <a v-if="currentItem.details.linkpresent" :href="currentItem.details.link" target="_blank"><font-awesome-icon :icon="['fas', 'external-link-alt']" aria-hidden="true"></font-awesome-icon> WEBSITE</a>
                         </div>
                     </div>
                 </div>
