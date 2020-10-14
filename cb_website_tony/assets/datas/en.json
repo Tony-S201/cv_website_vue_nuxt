@@ -5,14 +5,14 @@
         "image": "sf-1.jpg",
         "details": {
             "function": "Full-Stack Developer",
-            "description": "Collaborative website that lists the culinary specialties of France.",
+            "description": "Collaborative website that lists the culinary specialties of France. It offers an interactive map of the different regions and their specialties, a form to suggest a new specialty, a global listing and a back office allowing the administrator to approve the addition of the proposed specialties.",
             "team": "Myself",
-            "date": "August 2020",
+            "date": "September 2020",
             "overview": "",
             "linkpresent": true,
             "link": "https://www.saveurs-france.tonyswierz.com"
         },
-        "logo": "icons8-building-construction-96.png",
+        "logo": "coq-francais.png",
         "carousel": [
             { "img" : "sf-1.jpg" },
             { "img" : "sf-2.jpg" },
@@ -284,4 +284,10 @@
     "title_projects" : "Projects",
     "title_contact" : "Contact",
     "title_lab" : "Lab"
-}}
+},
+"index": {
+    "first_line" : "Web Developer",
+    "second_line" : "Welcome to my website",
+    "start" : "Let's go"
+}
+}

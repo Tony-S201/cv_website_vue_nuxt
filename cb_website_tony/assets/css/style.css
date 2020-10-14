@@ -16,7 +16,13 @@ body {
     50%{ background-color: #91D155;}
     100%{ background-color: #4BCCA7;}
 }
-
+.first-dropdown-container {
+    position: absolute;
+    right: 0;
+    border: 0;
+    margin-top: 17px;
+    margin-right: 15px;
+}
 .home-text-container {
     width: 100%;
 }
@@ -618,13 +624,14 @@ main {
     }
     .inside-aside-menu-list-items {
         display: block;
-        font-size: 1.7em;
+        font-weight: 700;
+        font-size: 1.5em;
         color: #fff;
         margin-bottom: 5%;
     }
     .inside-aside-menu-list-items:hover {
         display: block;
-        font-size: 1.7em;
+        font-size: 1.5em;
         color: #696969;
         margin-bottom: 5%;
     }
@@ -641,6 +648,9 @@ main {
         background-color: #696969;
         padding: 6px;
         border-radius: 15px;
+    }
+    .inside-aside-mentions-blog {
+        margin-bottom: 10px;
     }
     .inside-aside-mentions-download-container {
         margin-top: 10px;

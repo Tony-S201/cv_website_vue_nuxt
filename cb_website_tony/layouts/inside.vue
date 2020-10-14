@@ -18,6 +18,9 @@
           </div>
           <footer class="inside-aside-footer-container">
             <div class="inside-aside-mentions-networks has-text-centered">
+              <div class="inside-aside-mentions-download-container inside-aside-mentions-blog">
+                <a href="https://blog.tonyswierz.com" target="_blank" class="inside-aside-mentions-download has-text-white has-text-weight-bold">Blog <font-awesome-icon :icon="['fab', 'wordpress']" aria-hidden="true"></font-awesome-icon></a>
+              </div>
               <a href="https://github.com/Tony-S201" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-github-48.png"/></a>
               <a href="https://www.linkedin.com/in/tonyswierz/" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-linkedin-48.png"/></a>
               <a href="https://stackoverflow.com/users/12467251/tony-s?tab=profile" target="_blank"><img class="inside-aside-mentions-pictures" src="~/assets/img/icons8-stack-overflow-48.png"/></a>

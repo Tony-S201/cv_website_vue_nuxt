@@ -4,15 +4,13 @@
       <div class="home-left">
         <div class="home-left-title is-uppercase is-size-3-mobile is-size-2-tablet is-size-1-desktop">
           <p>Swierz Tony</p>
-          <p>WEB DEVELOPER</p>
-          <p>DEVELOPPEUR WEB</p>
+          <p>{{ langs[activeLanguage].index.first_line }}</p>
         </div>
         <div class="home-left-description is-size-4-mobile is-size-3-tablet is-size-2-desktop">
-          <p>Welcome to my website</p>
-          <p>Bienvenue sur mon site</p>
+          <p>{{ langs[activeLanguage].index.second_line }}</p>
         </div>
         <div class="home-left-button-container">
-          <button class="is-uppercase home-left-button is-size-6-mobile is-size-5-tablet" @click="goToWebsite()">Let's go <br> C'est parti</button>
+          <button class="is-uppercase home-left-button is-size-6-mobile is-size-5-tablet" @click="goToWebsite()">{{ langs[activeLanguage].index.start }}</button>
         </div>
       </div>
       <div class="home-right">
@@ -24,22 +22,28 @@
 </template>
 
 <script>
+import fr from '../assets/datas/fr.json'
+import en from '../assets/datas/en.json'
+import { mapState } from 'vuex'
 
 export default {
   layout: 'first',
-  head: {
-    title: 'Tony Swierz | Développeur Web',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'keywords', content: 'portfolio, developer'},
-      { hid: 'description', name: 'description', content: 'Tony Swierz, développeur web de Bordeaux. Venez découvrir mon site portfolio.'}
-    ],
+  head() {
+    return {
+      title: this.activeLanguage == 'fr' ? 'Tony Swierz | Développeur Web' : 'Tony Swierz | Web Developer',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'keywords', content: 'portfolio, developer'},
+        { hid: 'description', name: 'description', content: 'Tony Swierz, développeur web de Bordeaux. Venez découvrir mon site portfolio.'}
+      ],
+    }
   },
   data () {
     return {
       isLoading: true,
       isFullPage: true,
+      langs: { en: en , fr: fr },
     }
   },
   methods: {
@@ -47,6 +51,9 @@ export default {
       this.$router.push('/about')
     }
   },
+  computed: mapState({
+    activeLanguage: state => state.selectLanguage,
+  }),
   mounted () {
     this.isLoading = false
   }

@@ -6,14 +6,14 @@
         "image": "sf-1.jpg",
         "details": {
             "function": "Développeur FullStack",
-            "description": "Site collaboratif qui répertorie les spécialités culinaires de la France.",
+            "description": "Site collaboratif qui répertorie les spécialités culinaires de la France. Il propose une carte interactive des différentes régions et leurs spécialités, un formulaire pour proposer une nouvelle spécialité, un listing global ainsi qu'un back-office permettant à l'administrateur d'approuver l'ajout des spécialités proposées.",
             "team": "Moi-meme",
-            "date": "Août 2020",
+            "date": "Septembre 2020",
             "overview": "",
             "linkpresent": true,
             "link": "https://www.saveurs-france.tonyswierz.com"
         },
-        "logo": "icons8-building-construction-96.png",
+        "logo": "coq-francais.png",
         "carousel": [
             { "img" : "sf-1.jpg" },
             { "img" : "sf-2.jpg" },
@@ -221,7 +221,7 @@
         },
         "degree": {
             "title": "Diplômes",
-            "text_first": "• Titre de Développeur Web et Web Mobile, RNCP Niveau III Bac +2/3",
+            "text_first": "• Titre de Développeur Web et Web Mobile, RNCP Niveau III - Bac +2",
             "text_second": "• Certificat Opquast® : Maîtrise de la qualité en projet Web - Niveau Confirmé"
         }
     },
@@ -285,5 +285,10 @@
     "title_projects" : "Projets",
     "title_contact" : "Contact",
     "title_lab" : "Lab"
+},
+"index": {
+    "first_line" : "Développeur Web",
+    "second_line" : "Bienvenue sur mon site",
+    "start" : "C'est parti"
 }
 }
