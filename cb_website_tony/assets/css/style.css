@@ -462,12 +462,18 @@ main {
     -webkit-justify-content: center;
 }
 .about-steps .b-steps .steps .step-items .step-item:first-child .step-marker {
-    background-image: url('../img/about-icons/logo-monkey.png');
+    background-image: url('../img/about-icons/logo-cardemy.png');
     background-position: center;
 		background-size: cover;
 		-webkit-background-size: cover;
 }
 .about-steps .b-steps .steps .step-items .step-item:nth-child(2) .step-marker {
+    background-image: url('../img/about-icons/logo-monkey.png');
+    background-position: center;
+		background-size: cover;
+		-webkit-background-size: cover;
+}
+.about-steps .b-steps .steps .step-items .step-item:nth-child(3) .step-marker {
     background-image: url('../img/about-icons/logo-oclock.png');
     background-position: center;
 		background-size: cover;

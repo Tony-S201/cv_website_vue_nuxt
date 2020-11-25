@@ -48,6 +48,18 @@
           data-sal-duration="1000"
           :label-position="labelPosition"
           vertical >
+          <b-step-item class="about-steps-first" :label="this.langs[this.activeLanguage].about.experience.last.date + ' - ' + this.langs[this.activeLanguage].about.experience.last.enterprise" icon="" :clickable="clickable" >
+            <h2 class="subtitle about-titles has-text-weight-bold">
+              {{ langs[activeLanguage].about.experience.last.enterprise }}
+            </h2>
+            <p class="about-steps-paragraphs">
+              {{ langs[activeLanguage].about.experience.last.description }}
+            </p>
+            <p class="about-steps-paragraphs">
+              {{ langs[activeLanguage].about.experience.last.description_second }}
+            </p>
+
+          </b-step-item>
           <b-step-item class="about-steps-first" :label="this.langs[this.activeLanguage].about.experience.first.date + ' - ' + this.langs[this.activeLanguage].about.experience.first.enterprise" icon="" :clickable="clickable" >
             <h2 class="subtitle about-titles has-text-weight-bold">
               {{ langs[activeLanguage].about.experience.first.enterprise }}

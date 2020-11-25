@@ -227,6 +227,17 @@
     },
     "experience": {
         "title": "Expérience",
+        "last": {
+            "enterprise": "Cardemy",
+            "description": "Je suis actuellement chez Cardemy, une app e-learning qui permet d'apprendre les langues étrangères de manière ultra-personnalisée en exploitant le Big Data et l'IA.",
+            "description_second": "Mon rôle est de maintenir / développer l'application via la stack Laravel et VueJS.",
+            "technologies": [
+                { "name" : "VueJS" },
+                { "name" : "Laravel" },
+                { "name" : "Docker" }
+            ],
+            "date": "Octobre 2020 à aujourd'hui" 
+        },
         "first": {
             "enterprise": "Monkey Monk",
             "description": "J'ai travaillé chez Monkey Monk, une entreprise sociale du numérique ayant un rôle dans l'écosystème Darwin de Bordeaux. Cela m'a permis de me familiariser avec les technologies VueJS, Laravel, MongoDB, Docker, Wordpress (Divi).",
