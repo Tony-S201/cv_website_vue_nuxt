@@ -216,7 +216,7 @@
         "title": "Informations",
         "aboutperson": {
             "title": "About",
-            "text": "Interested in the possibilities of the IT domain, my professional choice fell naturally on web development, with a preference for the Front-End. My goal is to continue to develop skills in modern and efficient technologies (for example VueJS Laravel and ReactJS). I also have an interest in UX/UI Design and Adobe Illustrator, subjects on which I plan to train myself. Sensitive to certain causes, I would like to be able to get a position that makes sense in a human company. "
+            "text": "Interested in the possibilities of the IT field, my professional choice naturally fell on web development, with a preference for the Front-End. I also have an interest in topics like blockchain and entrepreneurship."
         },
         "degree": {
             "title": "Degrees",
@@ -228,8 +228,9 @@
         "title": "Experience",
         "last": {
             "enterprise": "Cardemy",
-            "description": "I am currently at Cardemy, an e-learning app that allows you to learn foreign languages ​​in an ultra-personalized way by exploiting Big Data and AI.",
-            "description_second": "My role is to maintain / develop the application via the Laravel and VueJS stack.",
+            "description": "Cardemy is an e-learning app that allows you to learn foreign languages ​​in an ultra-personalized way by exploiting Big Data and AI.",
+            "description_second": "We offer a new system of video flashcards and spaces repetitions algorithm (SRS).",
+            "description_third": "My role is to maintain / develop the application via the Laravel and VueJS stack.",
             "technologies": [
                 { "name" : "VueJS" },
                 { "name" : "Laravel" },
@@ -275,7 +276,7 @@
 },
 "contact": {
     "titles" : {
-        "form": "Form",
+        "form": "Message",
         "localisation": "Localisation"
     },
     "formdetails" : {

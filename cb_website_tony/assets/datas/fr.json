@@ -217,7 +217,7 @@
         "title": "Informations",
         "aboutperson": {
             "title": "A propos",
-            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End. J'ai pour objectif de continuer à monter en compétences dans des technologies modernes et efficaces (par exemple VueJS, Laravel, ReactJS), je porte également un intérêt pour l'UX/UI Design et Adobe Illustrator sujets sur lesquels j'ai pour projet de m'auto-former. Sensible à certaines causes, j'aimerais pouvoir obtenir un poste qui a du sens dans une entreprise humaine."
+            "text": "Intéressé par les possibilités du domaine informatique, mon choix professionnel s'est porté naturellement sur le développement web, avec une préférence pour le Front-End. Je porte également un intérêt pour des sujets comme la blockchain et l'entrepreneuriat."
         },
         "degree": {
             "title": "Diplômes",
@@ -229,8 +229,9 @@
         "title": "Expérience",
         "last": {
             "enterprise": "Cardemy",
-            "description": "Je suis actuellement chez Cardemy, une app e-learning qui permet d'apprendre les langues étrangères de manière ultra-personnalisée en exploitant le Big Data et l'IA.",
-            "description_second": "Mon rôle est de maintenir / développer l'application via la stack Laravel et VueJS.",
+            "description": "Cardemy est une plateforme e-learning qui permet d'apprendre les langues étrangères de manière ultra-personnalisée en exploitant le Big Data et l'IA.",
+            "description_second": "Nous proposons un système inédit de flashcards vidéos et de répétitions espacées (SRS).",
+            "description_third": "Mon rôle est de maintenir / développer l'application via la stack Laravel et VueJS.",
             "technologies": [
                 { "name" : "VueJS" },
                 { "name" : "Laravel" },
@@ -276,7 +277,7 @@
 },
 "contact": {
     "titles" : {
-        "form": "Formulaire",
+        "form": "Message",
         "localisation": "Localisation"
     },
     "formdetails" : {

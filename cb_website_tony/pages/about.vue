@@ -58,6 +58,9 @@
             <p class="about-steps-paragraphs">
               {{ langs[activeLanguage].about.experience.last.description_second }}
             </p>
+            <p class="about-steps-paragraphs">
+              {{ langs[activeLanguage].about.experience.last.description_third }}
+            </p>
 
           </b-step-item>
           <b-step-item class="about-steps-first" :label="this.langs[this.activeLanguage].about.experience.first.date + ' - ' + this.langs[this.activeLanguage].about.experience.first.enterprise" icon="" :clickable="clickable" >
