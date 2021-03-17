@@ -56,9 +56,6 @@
               {{ langs[activeLanguage].about.experience.last.description }}
             </p>
             <p class="about-steps-paragraphs">
-              {{ langs[activeLanguage].about.experience.last.description_second }}
-            </p>
-            <p class="about-steps-paragraphs">
               {{ langs[activeLanguage].about.experience.last.description_third }}
             </p>
 

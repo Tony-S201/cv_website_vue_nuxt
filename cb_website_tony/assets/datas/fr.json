@@ -230,7 +230,6 @@
         "last": {
             "enterprise": "Cardemy",
             "description": "Cardemy est une plateforme e-learning qui permet d'apprendre les langues étrangères de manière ultra-personnalisée en exploitant le Big Data et l'IA.",
-            "description_second": "Nous proposons un système inédit de flashcards vidéos et de répétitions espacées (SRS).",
             "description_third": "Mon rôle est de maintenir / développer l'application via la stack Laravel et VueJS.",
             "technologies": [
                 { "name" : "VueJS" },
